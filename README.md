@@ -44,8 +44,53 @@ C-program-> RISC V specification in RTL then RTL to layout
 
 ![5](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4966c89b-0680-43ce-929d-f9e59487cdec)
 
+
+
 # Application software to Hardware
 ![6](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/537c9a6e-0b61-4537-8c84-b0a56b8bdd11)
+
+# Application Software - > System Software - > Hardware chip
+Apps enter into a block of system software and system software converts the entire program into binary language. There are some layers inside the system software - Operating System, Compiler, Assembler
+Operating system handles input/output operations and allocate memory also it manage the low level system functions.
+Compiler takes the output from the operating system as C,C++,Java and convert them into instructions. This instruction depends upon which hardware is used.(For eg. ARM processor then the instruction set will be ARM set)
+Assembler takes the instructions from compiler and converts them into respective binary numbers. This binary language now sends to hardware and hardware performs output based on the function it receives and gives the output. Instruction acts as abstract interface between C-language and the hardware.
+
+![7](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c48bc420-3647-4a8d-89d1-6843e63fa5ee)
+![6](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/ea33a9eb-852c-4ec9-b7df-0830e6f28562)
+
+# SoC Design using OpenLane
+Introduction to Open source Digital ASIC Design 
+
+What is RTL design? 
+In digital circuit design, register-transfer level (RTL) is a design abstraction which models a synchronous digital circuit in terms of the flow of digital signals (data) between hardware registers, and the logical operations performed on those signals. For these designs many open sources are available.
+
+What are EDA tools? 
+The term Electronic Design Automation (EDA) refers to the tools that are used to design and verify integrated circuits (ICs), printed circuit boards (PCBs), and electronic systems. Many open sources tools are available like Qflow, OpenROAD, OpenLANE, etc...
+
+What is PDK?
+Process Design Kit (PDK) is a software tool used in the design and simulation of semiconductor manufacturing processes. It provides a comprehensive set of tools and libraries for modelling and simulating various aspects of the manufacturing process, including process flow, equipment layout, and process parameters. PDK is used by semiconductor manufacturers to design and optimize their manufacturing processes, from the early stages of process development to the final stages of production. It helps to identify bottlenecks and potential problems in the process, reduce the risk of defects and improve the overall yield and quality of the devices being manufactured.
+
+![9](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/59d6a023-c06c-4535-aed7-42a1992a7db9)
+![10](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/53d05f40-a8a2-4bb6-8cb9-9de4f32d540f)
+
+
+In 2020, GOOGLE released the open source PDK for FOSS 130nm production with the skywater technology. The current Technology node is in 3 nm. But in many applications, the advanced node is not required, and the cost of the advanced node is also high as compared to 130 nm processors. This 130nm processor is also a fast processor. 
+For example, Intel: P4EE @3.46 GHz(Q4'o4), sky130_OSU (single cycle RV32i CPU) pipeline version can achieve more than 1 GHz clock.
+![11](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/dfdfd3b9-a8c7-4b19-8589-60b697e5854a)
+
+# Simplified RTL to GDS Flow
+
+![12](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/9c30fe22-4b8c-4767-9f33-8b9935143fcd)
+Step 1. Synthesis:- In the synthesis, the design RTL is translated to a circuit out from the standard cell library (SCL). The resultant circuit is described in HDL - gate level netlist. The gate level net list is functionally equivalent to the RTL. 
+
+![13](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/da35c21d-67f6-4286-bddb-a2c23babd2d5)
+
+Step 2. Floor/Power Planning:-
+Floor planning is the process of dividing the silicon area of a chip into smaller regions or blocks, and distributing the components and interconnects within those blocks. The main objective of floor planning is to optimize the layout of the components and interconnects to reduce the distance between them, minimize the number of interconnects, and improve the overall performance of the chip.
+
+In floor planning, the chip is divided into smaller areas called "dies," and each die is further divided into smaller regions called "cores." The components and interconnects are then placed within these cores to optimize the layout.
+
+The main objective here is that to plan silicon area and distribute the power to the whole circuit. In the chip floor planning, the partition chip die between different system building blocks and place the i/o pads. In micro floor planning, we define the dimensions, pin locations, rows. In power planning, the power network is constructed. Typically, the chip is power by multiple VDD and GND. so; total components are connected to power supply horizontally and vertically by metal strips. Here parallel structures are used to reduce the resistance. To address the electro magnetization problem, power distribution network uses upper metal layers, which are thicker than lower metal layers. Hence have a less resistance.
 
 
 
