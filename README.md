@@ -145,6 +145,27 @@ After this step is the physical implementation – which includes several steps 
 
 ![22](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8caab3fb-fef8-45ad-a1b1-d4f692d04e3f)
 
+After  physical implementation – which includes several steps – uses the OpenROAD app.
+ – performs floor & power planning, decoupling capacitors and tap cell insertion, placements, clock tree synthesis, and global routing – also known as automated PnR. The antenna rule specifies the maximum tolerance for the ratio of a metal line area to the area of connected gates. VLSI process starts from the substrate, device layer, and then metal layers. The Etch process builds up the electrical charges on metal layers. Inserting antenna diode in the gate netlist is also performed in the synthesis process.
+
+The optimization results in a transformation in gatelevel netlist, which is performed in the synthesis process in OpenRoad, is compared in the logic equivalence Check (LEC) using the YoSys tool to make sure that the design is functionally equivalent. Detailed routing is performed after LEC by yosys. Then Antenna violation check is performed and swap the positions of the antenna diodes to remove the antenna violations in the design. Antenna diodes are available in SCL.
+
+
+![23](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d9c3325d-ad4e-4106-ac2b-84df13e54690)
+
+![24](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c4bf9bd4-06fe-42ff-8404-1c3fac3a9948)
+
+![25](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e8bff037-428f-4d9a-b328-17cecce599f1)
+
+![26](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/ef7ebf3e-0d5d-4af0-9a60-152f22dcc3e9)
+
+The sign-off in OpenLane involves STA, DRC, LVS, and interconnect RC extraction from the routed layout analysis. A set of reports is generated which helps in the Static timing analysis. 
+RC extraction – DEF2SPEF
+STA- OpenSTA (OpenROAD)
+
+
+# Get familiar to OpenSource EDA tool
+
 
 
 
