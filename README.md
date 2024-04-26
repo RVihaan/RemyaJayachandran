@@ -90,7 +90,32 @@ Floor planning is the process of dividing the silicon area of a chip into smalle
 
 In floor planning, the chip is divided into smaller areas called "dies," and each die is further divided into smaller regions called "cores." The components and interconnects are then placed within these cores to optimize the layout.
 
-The main objective here is that to plan silicon area and distribute the power to the whole circuit. In the chip floor planning, the partition chip die between different system building blocks and place the i/o pads. In micro floor planning, we define the dimensions, pin locations, rows. In power planning, the power network is constructed. Typically, the chip is power by multiple VDD and GND. so; total components are connected to power supply horizontally and vertically by metal strips. Here parallel structures are used to reduce the resistance. To address the electro magnetization problem, power distribution network uses upper metal layers, which are thicker than lower metal layers. Hence have a less resistance.
+The main objective here is to plan the silicon area and distribute the power to the whole circuit. In the chip floor planning, the partition chip dies between different system building blocks and places the i/o pads. In micro floor planning, we define the dimensions, pin locations, and rows. In power planning, the power network is constructed. Typically, the chip is powered by multiple VDD and GND. so; the total components are connected to the power supply horizontally and vertically by metal strips. Here parallel structures are used to reduce the resistance thereby IR drop. To address the electromagnetization problem, the power distribution network uses upper metal layers, which are thicker than lower metal layers. Hence have less resistance.
+
+![14a](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/859bb7b2-7a83-4d06-bbfd-a66b536b9fbd)
+![14](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/ec2b4082-ac60-4c7a-a700-479fb477230b)
+
+
+Step 3. Placements
+After floor and power planning, next is the placements. For macros, we will place the gate-level netlist itself. Cells are placed very close to each other in rows and columns to avoid the interconnect delays. Typical two types of Placements- Global followed by detailed placements. 
+![15](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d49ba403-ab1e-4d16-86dd-404007129363)
+
+Step 4: Clock tree synthesis
+After placements, then we have to distribute the clock before routing the signals. The clock trr synthesis step performs the distribution of the clock signals with minimum skew.
+Clock tree synthesis  - H-tree, X-tree, fish-bone, hybrid of all these.
+![16](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e6395899-2b57-4f6b-a2d2-7ea90e34b241)
+
+Step 5: Routing
+After clock tree synthesis, is the signal routing. Given a placement and  Fixed number of metal layers is required to find the valid pattern of horizontal and vertical wires to implement the wires that connects the cells together. The router uses the available metal layer from the PDK where the properties are mentioned- thickness, width, length, vias, etc. 
+![17](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/9a191ac2-55eb-46d6-b913-e29d96ab71b1)
+
+SKYwater PDK defines the routing layers- lowest layer- local interconnect layer- TiN layer, then following 5 metal layers- Aluminium layers
+Most routers are grid routers. Metal track forms the routing grids which is very huge and use divide and conquer method. Ie, global routing that generates routing guides and detailed routing uses fine grain methods and routing guides to use implement the wires. 
+
+Once the routing is completed we can move on to the final layout – verification
+DRC- design rule check – makes sure that the final layout obeys the design rules, LVS – layout versus schematic check 
+Finally, timing verification using static timing analysis to check any timing violations 
+
 
 
 
