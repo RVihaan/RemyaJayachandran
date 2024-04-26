@@ -116,6 +116,34 @@ Once the routing is completed we can move on to the final layout – verificatio
 DRC- design rule check – makes sure that the final layout obeys the design rules, LVS – layout versus schematic check 
 Finally, timing verification using static timing analysis to check any timing violations 
 
+# Introduction to Openlane and Strive chipsets
+
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout, and several custom scripts for design exploration and optimization. The flow performs all ASIC implementation steps from RTL down to GDSII.
+OpenLane can be used to implement Macros and chips.
+Two modes of operations - Autonomous or interactive
+
+![18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0a1a8f08-06a3-4005-ad4d-e0919e278356)
+![19](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/9053b05d-104a-46ee-b7e8-8e1a1eda25e5)
+
+# Flow diagram of OpenLane ASIC Flow: Design to GDSII
+
+OpenLane contains many open source tool packages – MAGIC, OpenRoad, Fault, Yosys, QFlow etc.
+Starts with RTL synthesis – RTL is fed to Yosys with design constraints- RTL to logic circuits using SCL components – optimized and mapped to synthesized cells using ABC,- hence in the form of ABC scripts.
+
+![20](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a5e7fe72-f9bc-4b53-95be-0f0a673eff0b)
+
+Synthesis exploration can provide you the report about the delay and area of the synthesized netlist and we can optimize the design 
+Openlane has a Design exploration utility that can be used to pick the best configurations for any given design as per the design specifications. 
+This is useful for finding the best configurations that results in best layout.
+OpenLane regression report gives the best-known results and give us information about any timing violations in the design.
+
+![21](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f5693bc9-eaf9-49e5-8c5f-bf2d47066a78)
+
+DFT test is optional – uses FAULT tool
+
+After this step is the physical implementation – which includes several steps – uses OpenROAD app. – performs floor & power planning, decoupling capacitors and tap cell insertion, placements, clock tree synthesis, and routing – also known as automated PnR.
+
+![22](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8caab3fb-fef8-45ad-a1b1-d4f692d04e3f)
 
 
 
