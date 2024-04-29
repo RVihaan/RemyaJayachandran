@@ -236,6 +236,7 @@ Steps:
 
 
 # % run_synthesis
+# Flop area : No. of D FF/ No. of cells  = 1613/ 14876 = 0.1084 = 10. 84 %
 
 # % run_floorplan
 
@@ -249,4 +250,5 @@ Steps:
 
 ![WhatsApp Image 2024-04-29 at 4 13 36 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e669e848-daef-40ad-b43d-da89fe1b650d)
 
+# Die area = 660.683 x 671.405 um^2
 
