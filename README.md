@@ -165,7 +165,74 @@ STA- OpenSTA (OpenROAD)
 
 
 # Get familiar to OpenSource EDA tool
+>cd Desktop
+>cd work/tools/
+>cd operlane_working_dir
+>cd openlane
+>docker ./flow.tcl -interactive
+% package require openlane 0.9
+% prep -design picorv32a -tag workshop
+
+![WhatsApp Image 2024-04-29 at 3 20 41 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5eeabf20-66d6-4bc3-94b7-950d68b2bf0a)
+
+![WhatsApp Image 2024-04-29 at 3 22 03 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/baa4b747-a662-481e-806e-10e65cf85dd0)
+
+![WhatsApp Image 2024-04-29 at 3 27 48 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7fa5270f-819b-49f9-ad7a-c4c53b459fd5)
+
+![WhatsApp Image 2024-04-29 at 3 28 56 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b29bb38f-189e-4735-b525-90937b3a7263)
+
+![WhatsApp Image 2024-04-29 at 3 29 12 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a199b435-241d-4575-a66b-279889ed8488)
+
+![WhatsApp Image 2024-04-29 at 3 31 56 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c600b905-d580-4151-be37-afa22918201e)
+
+![WhatsApp Image 2024-04-29 at 3 33 41 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/af53d350-40e0-4b5f-b8de-a1f5d2115986)
+
+![WhatsApp Image 2024-04-29 at 3 36 26 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/cd92915b-9538-4633-8d07-a0eea8b564a9)
+
+![WhatsApp Image 2024-04-29 at 3 37 12 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0fee72fd-0559-4e39-8ac0-aee45d33e178)
+
+![WhatsApp Image 2024-04-29 at 3 37 49 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5cb94cb8-92c1-4e78-8fa7-fee5081354b7)
+
+![WhatsApp Image 2024-04-29 at 3 39 24 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8aecd21b-0577-48f6-80a3-c332b321a786)
+
+![WhatsApp Image 2024-04-29 at 3 39 47 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b9eb4291-f7a3-49d0-862c-9b90bd55cb23)
+
+![WhatsApp Image 2024-04-29 at 3 40 00 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/6196436d-5b94-4855-804e-f5532d5abca7)
+
+![WhatsApp Image 2024-04-29 at 3 41 11 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/02a30c6c-34b6-40f1-b977-5c93267e4a4f)
+
+![WhatsApp Image 2024-04-29 at 3 41 46 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d46601ca-cd48-43a9-8216-b8e682e91e48)
+
+![WhatsApp Image 2024-04-29 at 3 42 56 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/641ee6b7-e4e2-4ef6-b9ee-bbfde984e6f8)
+
+![WhatsApp Image 2024-04-29 at 3 44 33 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b5f80e1e-f85b-4fc1-951a-61684d6d25b2)
+
+![WhatsApp Image 2024-04-29 at 3 45 14 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a3ca45ea-2f1e-4910-b48f-078b8cb84d20)
+
+![WhatsApp Image 2024-04-29 at 3 49 50 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/493c9ec0-44c7-42a1-9b8c-0b1181756b01)
+
+![WhatsApp Image 2024-04-29 at 3 50 00 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4c916d68-fe05-42d7-8b18-074a6c682fb7)
+
+![WhatsApp Image 2024-04-29 at 4 12 51 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c6924894-c043-454f-ab3e-3f000bdfe317)
+![WhatsApp Image 2024-04-29 at 4 11 41 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/939c05e4-f950-43cb-a24b-151725a8b0cf)
+![WhatsApp Image 2024-04-29 at 4 04 26 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/039f5a9d-efdb-4af7-a479-7a8636caff80)
+![WhatsApp Image 2024-04-29 at 4 02 39 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4a83b0cb-6f6a-4a60-85b4-c5cdc1bb4a85)
+![WhatsApp Image 2024-04-29 at 4 01 04 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/676d16af-fbe9-4436-8e37-292121b5aebb)
+![WhatsApp Image 2024-04-29 at 3 59 52 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8039ce08-e423-4ad3-8914-595b74ec9d7f)
+![WhatsApp Image 2024-04-29 at 3 54 03 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a2a57335-6981-43ff-b397-ac79190a701d)
+![WhatsApp Image 2024-04-29 at 3 52 54 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/3212a818-88b8-4b87-af4c-c80aadb6a85d)
+![WhatsApp Image 2024-04-29 at 3 51 34 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f2e25a4e-e9a8-4763-82c3-b5af5bfd52b9)
+![WhatsApp Image 2024-04-29 at 3 50 58 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8298fc31-87d2-493a-9390-ecf3856084c7)
 
 
+% run_synthesis
+
+% run_floorplan
+
+![WhatsApp Image 2024-04-29 at 4 31 39 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4a4468aa-d01a-4dd1-b443-6ee8e601c6f3)
+![WhatsApp Image 2024-04-29 at 4 25 53 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/02e99795-da69-4ff3-8b20-c4480cacc0aa)
+![WhatsApp Image 2024-04-29 at 4 22 07 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5094c669-e87c-41c8-9331-62f4caa31923)
+![WhatsApp Image 2024-04-29 at 4 21 49 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/76cef911-c622-4089-9013-97c055ef28a2)
+![WhatsApp Image 2024-04-29 at 4 13 36 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e669e848-daef-40ad-b43d-da89fe1b650d)
 
 
