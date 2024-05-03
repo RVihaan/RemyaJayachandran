@@ -263,7 +263,8 @@ Steps:
 
 ![WhatsApp Image 2024-04-29 at 4 13 36 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e669e848-daef-40ad-b43d-da89fe1b650d)
 
-# Die area = 660.683 x 671.405 um^2
+Die area = 660.683 x 671.405 um^2
+design area  =        420473.3 u^2
 
 # Placement
 
