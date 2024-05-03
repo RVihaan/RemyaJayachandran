@@ -240,6 +240,10 @@ Steps:
 
 ![WhatsApp Image 2024-04-29 at 3 50 58 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8298fc31-87d2-493a-9390-ecf3856084c7)
 
+>> magic -T /home/vsdworkshop/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+
+
+![picorv32a floorplan def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8fcf9a65-abe9-4084-acac-f843cedebed8)
 
 
 # Flop area : No. of D FF/ No. of cells  = 1613/ 14876 = 0.1084 = 10. 84 %
@@ -261,6 +265,31 @@ Steps:
 
 # Die area = 660.683 x 671.405 um^2
 
+# Placement
+
+# %run_placement
+
+>> magic -T /home/vsdworkshop/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+![picorv32a placement def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/77db7ba4-92f2-44df-98b2-e0cce3492b1f)
+
+![placement](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/079ce0fc-d23f-447e-9ab5-065ec214335e)
 
 
+# Day 3: Steps to Display std_cells Using Magic tool
+
+step 1: Git clone the files from GitHub to your local pc
+
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+
+step 2: Copy technology file- sky130A.tech from sky130A pdk folder, to the vsdstdcelldesign folder
+
+Step 3: Give magic command to display the CMOS inverter layout
+
+magic -T sky130A.tech sky130_inv.mag
+
+
+![Screenshot from 2024-05-03 15-13-35](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/900c41fe-3a03-43b8-a2f6-f0f1babd470f)
+
+![Screenshot from 2024-05-03 15-37-22](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/949d4c6c-5257-420f-b7f0-ca47c63e7ad2)
 
