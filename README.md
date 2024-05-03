@@ -200,6 +200,11 @@ Steps:
 
 ![WhatsApp Image 2024-04-29 at 3 40 00 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/6196436d-5b94-4855-804e-f5532d5abca7)
 
+# Synthesis
+# % run_synthesis
+
+
+
 ![WhatsApp Image 2024-04-29 at 3 41 11 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/02a30c6c-34b6-40f1-b977-5c93267e4a4f)
 
 ![WhatsApp Image 2024-04-29 at 3 41 46 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d46601ca-cd48-43a9-8216-b8e682e91e48)
@@ -213,6 +218,7 @@ Steps:
 ![WhatsApp Image 2024-04-29 at 3 49 50 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/493c9ec0-44c7-42a1-9b8c-0b1181756b01)
 
 ![WhatsApp Image 2024-04-29 at 3 50 00 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4c916d68-fe05-42d7-8b18-074a6c682fb7)
+
 
 ![WhatsApp Image 2024-04-29 at 4 12 51 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c6924894-c043-454f-ab3e-3f000bdfe317)
 
@@ -235,8 +241,11 @@ Steps:
 ![WhatsApp Image 2024-04-29 at 3 50 58 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8298fc31-87d2-493a-9390-ecf3856084c7)
 
 
-# % run_synthesis
+
 # Flop area : No. of D FF/ No. of cells  = 1613/ 14876 = 0.1084 = 10. 84 %
+
+
+# FloorPlanning
 
 # % run_floorplan
 
@@ -251,4 +260,7 @@ Steps:
 ![WhatsApp Image 2024-04-29 at 4 13 36 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e669e848-daef-40ad-b43d-da89fe1b650d)
 
 # Die area = 660.683 x 671.405 um^2
+
+
+
 
