@@ -295,3 +295,37 @@ magic -T sky130A.tech sky130_inv.mag
 
 ![Screenshot from 2024-05-03 15-37-22](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/949d4c6c-5257-420f-b7f0-ca47c63e7ad2)
 
+In tkcon to get the information about the cell layers use command what
+
+![Screenshot from 2024-05-04 15-17-11](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/36aff2d8-0286-413e-a1f9-53f8d395604d)
+
+# Spice netlist extraction
+tkcon window: type  extract all
+
+![Screenshot from 2024-05-04 15-32-01](https://github.com/RVihaan/RemyaJayachandran/assets/149866052
+/b22cd497-fc1b-4a5e-9089-748a49b8ff50)
+
+![Screenshot from 2024-05-04 15-32-18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/40cc8105-5f32-4176-9455-bab4303e708b)
+
+For extracting the parasictic components- capacitance, resistance in the inverter cell
+tkcon window type: ext2spice cthresh 0 rthresh 0
+type: ext2spice
+
+
+![Screenshot from 2024-05-04 15-47-11](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/dfab3b74-0608-439a-8afc-fb625990728d)
+
+![Screenshot from 2024-05-04 15-47-26](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/cb1d402f-46d7-4693-91e4-2e72dc26705b)
+
+
+![Screenshot from 2024-05-04 15-47-54](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a77d146e-0ad2-454a-b33f-27119f7379e0)
+
+
+
+![Screenshot from 2024-05-04 15-56-34](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c1ad56fb-6cb9-4da5-b3a5-a67b59de99bd)
+
+Edit the spice file inorder to run the simulation in ngspice
+
+![Screenshot from 2024-05-04 16-21-33](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c317d1ef-4748-4109-b839-77d19b488cdf)
+
+
+
