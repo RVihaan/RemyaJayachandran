@@ -391,4 +391,27 @@ open met3.mag file in the magic
 
 ![Screenshot from 2024-05-04 17-29-47](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0a82c8bf-f148-4b7c-bf32-96d3071ebcdd)
 
+![Screenshot from 2024-05-04 18-38-31](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7e120434-c96f-4aae-a74c-9b668860f459)
+
+
+# poly.9 error
+open poly.mag file
+
+![Screenshot from 2024-05-04 18-43-21](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f9fedcab-d668-4617-bc2a-7ba6ff40a0db)
+
+
+
+![Screenshot from 2024-05-04 18-45-56](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/3361cafa-80be-4a16-8861-817ac69e0962)
+
+![Screenshot from 2024-05-04 18-47-39](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7893ea6f-9e22-4ccd-b74d-32299b030948)
+
+![Screenshot from 2024-05-04 18-49-46](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/2dda865c-2734-4268-a952-f648eba3e603)
+
+
+![Screenshot from 2024-05-04 18-51-43](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7033b8fd-9334-4502-b500-dffa8518a934)
+
+![Screenshot from 2024-05-04 19-08-35](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0b799dfd-ab03-409c-b6bb-b92e504a8bab)
+
+
+
 
