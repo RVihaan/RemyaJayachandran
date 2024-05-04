@@ -325,7 +325,18 @@ type: ext2spice
 
 Edit the spice file inorder to run the simulation in ngspice
 
-![Screenshot from 2024-05-04 16-21-33](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c317d1ef-4748-4109-b839-77d19b488cdf)
+![Screenshot from 2024-05-04 16-40-57](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/10a2657d-6c2e-47cd-9d74-c02f0b0deec3)
+
+
+install ngspice
+run ngspice using command : ngspice sky130_inv.spice
+
+![Screenshot from 2024-05-04 16-30-40](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0896dff1-9801-4edf-a4f1-02a6d39eba42)
+
+![Screenshot from 2024-05-04 16-39-34](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e7201e21-c4ee-4d93-9e60-6e30b270dadb)
+
+![Screenshot from 2024-05-04 16-39-40](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8842744b-5a8d-49c8-be8a-5bad05a300c3)
+
 
 
 
