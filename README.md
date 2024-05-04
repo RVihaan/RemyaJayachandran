@@ -363,3 +363,32 @@ Fall time  = 0.02625 ns
 3. propagation delay- Fall edge = 4.05297 ns - 4.05 ns = 0.00297 ns
 4. propagation delay= Rise edge = 2.17796 ns - 2.15011 ns = 0.02785 ns
 
+# DRC Corrections and rules
+
+Download :wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+Extract the folder
+
+to run MAGIC
+magic -d XR
+
+open met3.mag file in the magic
+
+![Screenshot from 2024-05-04 17-21-21](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e60c753b-7078-48a9-9adc-a0221ec5d4cb)
+
+![Screenshot from 2024-05-04 17-23-18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/63843898-4368-4804-8b2c-a3205aa5cff3)
+
+
+![Screenshot from 2024-05-04 17-25-30](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/dea5e9b2-a9af-4b8a-8c99-de5eb14b6646)
+
+![Screenshot from 2024-05-04 17-27-02](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c99d5f04-d562-4c1d-b1d8-98c0c3a2fc6e)
+
+![Screenshot from 2024-05-04 17-27-13](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/985405f2-c10f-461a-ba2f-abf88a2e3569)
+
+
+
+![Screenshot from 2024-05-04 17-29-41](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8aa432cd-8bfd-46b4-aa49-2e947ba6ffc0)
+
+
+![Screenshot from 2024-05-04 17-29-47](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0a82c8bf-f148-4b7c-bf32-96d3071ebcdd)
+
+
