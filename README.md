@@ -246,9 +246,10 @@ Steps:
 ![picorv32a floorplan def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8fcf9a65-abe9-4084-acac-f843cedebed8)
 
 
-# Flop area : No. of D FF/ No. of cells  = 1613/ 14876 = 0.1084 = 10. 84 %
+# Flop ratio : No. of D FF/ No. of cells  = 1613/ 14876 = 0.1084 = 10. 84 %
 
-
+........................................................................................................................................................
+# DAY2 : Good Fllor Plan Vs Bad Floorplan and Introduction to Library Cells
 # FloorPlanning
 
 # % run_floorplan
@@ -265,7 +266,7 @@ Steps:
 
 Die area = 660.683 x 671.405 um^2
 design area  =        420473.3 u^2
-
+.....................................................................................................................................................................................
 # Placement
 
 # %run_placement
