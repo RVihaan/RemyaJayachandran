@@ -333,10 +333,33 @@ run ngspice using command : ngspice sky130_inv.spice
 
 ![Screenshot from 2024-05-04 16-30-40](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0896dff1-9801-4edf-a4f1-02a6d39eba42)
 
+To plot the transient response type: plot y vs time a
+
 ![Screenshot from 2024-05-04 16-39-34](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e7201e21-c4ee-4d93-9e60-6e30b270dadb)
+
+Transient response of CMOS Inverter with input time period 4 ns, simulation stop time 20 ns
 
 ![Screenshot from 2024-05-04 16-39-40](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8842744b-5a8d-49c8-be8a-5bad05a300c3)
 
+Parameter extraction from transient response
+
+1. Rise time : change from 20 % to 80% of the rising edge of ouput signal
+
+   ![Screenshot from 2024-05-04 16-52-34](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/ec4bdc4a-fbfe-4704-a083-186db3c9ba12)
 
 
+![Screenshot from 2024-05-04 16-56-32](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/93fa313a-80d7-486f-aab4-d02a78e7e8fa)
+
+rise time = 0.04374 ns
+
+2. Fall time![Screenshot from 2024-05-04 17-01-01](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/614ed257-19da-4d2b-b66d-3f5ad1c51494)
+
+
+   ![Screenshot from 2024-05-04 17-02-20](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a6c1811a-740e-45ff-9836-f2ff1e508b41)
+
+
+Fall time  = 0.02625 ns
+
+3. propagation delay- Fall edge = 4.05297 ns - 4.05 ns = 0.00297 ns
+4. propagation delay= Rise edge = 2.17796 ns - 2.15011 ns = 0.02785 ns
 
