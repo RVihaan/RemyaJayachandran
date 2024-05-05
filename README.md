@@ -432,4 +432,8 @@ by adding the nsubstratecontact
 
 # Pre layout analysis and importance of good clock tree
 
+![Screenshot from 2024-05-05 23-24-24](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/529fdbd7-1438-4601-9239-14fdfe022e12)
 
+![Screenshot from 2024-05-05 23-26-07](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8ea78c5d-5400-4b31-8ba2-5fb0d9c53e55)
+
+![Screenshot from 2024-05-05 23-33-21](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7fef41f7-c387-4c30-b333-fa2703b4511f)
