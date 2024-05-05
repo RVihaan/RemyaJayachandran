@@ -412,6 +412,10 @@ open poly.mag file
 
 ![Screenshot from 2024-05-04 19-08-35](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0b799dfd-ab03-409c-b6bb-b92e504a8bab)
 
+![Screenshot from 2024-05-04 19-19-00](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/15f0c56e-2b5c-4370-96fb-6e43bee97e9f)
+
+
+# DRC error as geometrical construct
 
 
 
