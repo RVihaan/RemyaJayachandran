@@ -424,3 +424,12 @@ open poly.mag file
 ![Screenshot from 2024-05-05 09-11-21](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/468a6e7e-543c-41c4-921c-a2bccf92730b)
 
 ![Screenshot from 2024-05-05 09-16-38](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/047f4c43-e538-4be1-9e9c-626d66b24a07)
+
+by adding the nsubstratecontact
+
+![screenshot from 2024-05-05 23-01-25](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/65af3206-f629-42f8-9cb9-eba1b42be87e)
+
+
+# Pre layout analysis and importance of good clock tree
+
+
