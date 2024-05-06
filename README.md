@@ -564,6 +564,18 @@ run_placement
 ![picorv32a placement def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/37632e2c-e853-4bcc-90f4-7273351e569c)
 
 # Configure OpenSTA for post timing analysis
+![Screenshot from 2024-05-06 17-42-58](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4f7ba987-bf98-4390-aaf7-5bba69b51ec9)
+
+![Screenshot from 2024-05-06 17-45-10](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/310926fe-0420-4a76-89ce-19dea3fa6de9)
+
+![Screenshot from 2024-05-06 17-48-24](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/977c18d3-f0de-4d35-9d4b-7a96d41c17cb)
+
+![Screenshot from 2024-05-06 17-53-26](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/1985122b-a324-4fe6-b6f4-0a2ae1b1544a)
+
+![Screenshot from 2024-05-06 17-56-34](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5488a706-4b47-46bc-8150-ee95dee558e4)
+
+
+
 create pre_sta.conf file and my_base.sdc file
 my_base.sdc
 
@@ -613,12 +625,93 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pin}
 report_tns
 report_wns
 
-
+# Commands to run STA in another terminal
 openlane
 type command: sta pre_sta.conf
 ![Screenshot from 2024-05-06 17-27-42](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/be8ffc23-9d54-4e86-859d-59cfc78632f6)
 
 ![Screenshot from 2024-05-06 17-27-52](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/3671a7a7-6468-4e2b-8cba-274bace93580)
 
+To reduce the delay, we can add parameter to reduce fanout and do synthesis again
+
+Commands to include new lef and perform synthesis in openlane:
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+set ::env(SYNTH_SIZING) 1
+set ::env(SYNTH_MAX_FANOUT) 4
+echo $::env(SYNTH_DRIVING_CELL)
+run_synthesis
+
+Commands to perform analysis and optimize timing by replacing with OR gates in picorv32a with OR gate of drive strength 4
+
+report_net -connections _11643_
+replace_cell _14481_ sky130_fd_sc_hd__or4_4
+report_checks -fields {net cap slew input_pins} -digits 4
 
 
+report_net -connections _11672_
+replace_cell _14510_ sky130_fd_sc_hd__or3_4
+report_checks -fields {net cap slew input_pins} -digits 4
+
+report_net -connections _11675_
+replace_cell _14514_ sky130_fd_sc_hd__or3_4
+report_checks -fields {net cap slew input_pins} -digits 4
+
+report_checks -from _29043_ -to _30440_ -through _14506_
+
+Replace the old netlist with the new netlist generated after timing fix and implement the floorplan, placement and CTS.
+
+results folder:
+cp picorv32a.synthesis.v picorv32a.synthesis_old.v
+
+Commands to write verilog
+write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/workshop/results/synthesis/picorv32a.synthesis.v
+
+%exit
+
+# Commands load the Design and run stage by stage
+
+Openlane:
+docker ./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a -tag workshop -overwrite
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+set ::env(SYNTH_SIZING) 1
+
+run_synthesis
+run_floorplan
+(if error: 
+init_floorplan
+place_io
+tap_decap_or
+)
+run_placement
+
+![Screenshot from 2024-05-06 18-00-13](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f794a18a-a76c-4560-9cbe-609be03f6fc3)
+![Screenshot from 2024-05-06 18-00-57](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/ef667dcf-c12e-468f-b605-20598a4985d9)
+
+![Screenshot from 2024-05-06 18-01-10](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/69f6e850-b236-49e3-bf18-43f21b7d5314)
+
+![Screenshot from 2024-05-06 18-01-37](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b8647ba6-da24-44fb-a1f1-7da3dff26ba1)
+
+![Screenshot from 2024-05-06 18-01-54](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8e17f003-d8e7-4a27-9e49-537b84a6a2c2)
+
+![Screenshot from 2024-05-06 18-02-14](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/80feffe0-f096-4cb6-a41d-f3efe820ddc3)
+
+![Screenshot from 2024-05-06 18-03-27](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7e0d24b2-e373-46c9-b8aa-4b2e76e7b9fb)
+
+![Screenshot from 2024-05-06 18-04-05](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/94cb0c4a-0d43-448d-bf6f-93a93f8858ee)
+
+![Screenshot from 2024-05-06 18-05-47](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/82b27580-6d8d-4c94-bd44-afe6e0f9f51d)
+
+![Screenshot from 2024-05-06 18-06-06](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/fe26e44a-a67c-4e73-83b5-1f080fd208e2)
+
+
+
+# Post timing analysis -CTS OpenROAD timing analysis.
