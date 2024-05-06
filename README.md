@@ -715,3 +715,35 @@ run_placement
 
 
 # Post timing analysis -CTS OpenROAD timing analysis.
+# Commands to be run in OpenLANE flow to do OpenROAD timing analysis
+Openlane: commands for openroad
+
+openroad
+read_lef /openLANE_flow/designs/picorv32a/runs/workshop/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/runs/workshop/results/cts/picorv32a.cts.def
+write_db pico_cts.db
+read_db pico_cts.db
+read_verilog /openLANE_flow/designs/picorv32a/runs/workshop/results/synthesis/picorv32a.synthesis_cts.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+link_design picorv32a
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+set_propagated_clock [all_clocks]
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+![Screenshot from 2024-05-06 20-00-20](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/12613960-b830-43b3-aaf6-dab46bb7d17e)
+
+![Screenshot from 2024-05-06 20-00-36](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d21b1910-0c0e-405e-9ce3-7c9669d48dd7)
+
+![Screenshot from 2024-05-06 20-00-46](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7f43811a-b67a-46ac-9e9a-ef7292ae4eab)
+
+
+# Commands to be run in OpenLANE flow to do OpenROAD timing analysis after changes
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+echo $::env(CTS_CLK_BUFFER_LIST)
+echo $::env(CURRENT_DEF)
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/workshop/results/placement/picorv32a.placement.def
+
+
+
