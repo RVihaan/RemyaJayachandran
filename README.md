@@ -790,6 +790,9 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ![Screenshot from 2024-05-06 22-33-39](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/500afffc-51d9-421a-beed-59fbd763e040)
 
+![Screenshot from 2024-05-06 22-51-07](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/9f7640f2-e52b-4849-9dca-f4ace1d126df)
+
+![Screenshot from 2024-05-06 22-52-41](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8a5a33a9-7e13-4cdd-882f-ef781f1918c6)
 
 Routing strategy
 
@@ -800,4 +803,22 @@ run_routing
 
 ![Screenshot from 2024-05-06 22-45-41](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0a0b18e2-fdcd-41d4-a482-80c0aa83d11a)
 
+![Screenshot from 2024-05-06 22-58-02](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4414f4c5-952a-4059-93f4-1b636f406326)
+
+![Screenshot from 2024-05-06 22-58-45](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/41c18f9e-ba18-4dd3-a0f3-7de4ba6363a0)
+
+![Screenshot from 2024-05-06 22-59-18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/61f91308-d729-41eb-990f-dd2e8531a543)
+
+Post Routing
+
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/workshop/results/routing/
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
+
+![Screenshot from 2024-05-06 23-02-13](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e2573b24-ec67-4511-bfd9-9494e84da907)
+
+![Screenshot from 2024-05-06 23-02-31](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/edbcf407-9432-4dcc-a778-18f87529a7f5)
+
+
+![picorv32a def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5b7e99e8-b778-4da9-8375-17fb21ab9282)
 
