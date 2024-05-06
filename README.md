@@ -476,8 +476,8 @@ set ::env(FP_IO_VMETAL) 4
 set ::env(FP_IO_HMETAL) 3
 
 set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
-set ::env(LIB_MIN) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
-set ::env(LIB_MAX) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
 set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
 
 set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]*
@@ -493,5 +493,14 @@ if { [file exists $filename] == 1} {
 :q! - exit
 
 
+![Screenshot from 2024-05-06 14-12-03](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/2b70c934-0de9-4ed9-9f4b-09db78f367cd)
+
+
+![Screenshot from 2024-05-06 14-12-32](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/65b38807-09a9-48e5-a488-eda21c2da119)
+
+
+![Screenshot from 2024-05-06 14-12-56](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d57f6db4-3ef7-42de-bc60-74511f2ce327)
+
+![Screenshot from 2024-05-06 14-20-06](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e4c5c738-e6b8-4f3d-ad7a-dd8ef9aebd1e)
 
 
