@@ -492,6 +492,16 @@ if { [file exists $filename] == 1} {
 
 :q! - exit
 
+# OPENLANE :- Now we will go to the open lane directory and execute the docker command
+
+docker ./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a -tag workshop
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+run_synthesis
 
 ![Screenshot from 2024-05-06 14-12-03](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/2b70c934-0de9-4ed9-9f4b-09db78f367cd)
 
@@ -502,5 +512,13 @@ if { [file exists $filename] == 1} {
 ![Screenshot from 2024-05-06 14-12-56](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d57f6db4-3ef7-42de-bc60-74511f2ce327)
 
 ![Screenshot from 2024-05-06 14-20-06](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e4c5c738-e6b8-4f3d-ad7a-dd8ef9aebd1e)
+
+
+
+run_floorplan
+
+init_floorplan
+place_io
+tap_decap_or
 
 
