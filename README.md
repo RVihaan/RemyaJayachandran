@@ -496,10 +496,22 @@ if { [file exists $filename] == 1} {
 
 docker ./flow.tcl -interactive
 package require openlane 0.9
-prep -design picorv32a -tag workshop
+prep -design picorv32a -tag workshop -overwrite
 
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
+
+echo $::env(SYNTH_STRATEGY)
+
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+echo $::env(SYNTH_BUFFERING)
+
+echo $::env(SYNTH_SIZING)
+
+set ::env(SYNTH_SIZING) 1
+
+echo $::env(SYNTH_DRIVING_CELL)
 
 run_synthesis
 
@@ -517,8 +529,96 @@ run_synthesis
 
 run_floorplan
 
+If error appears use commands
+
 init_floorplan
 place_io
 tap_decap_or
+
+![Screenshot from 2024-05-06 15-37-49](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/040ebca2-11f3-44b8-9687-fa8bd30ef3b6)
+
+![Screenshot from 2024-05-06 15-30-31](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/178367fb-9826-4923-a32f-65d4d6f3541e)
+
+![Screenshot from 2024-05-06 15-38-08](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/84191609-ebaf-4b90-81bc-5bd2d42eeb51)
+
+
+![Screenshot from 2024-05-06 14-12-32](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/fe0e8575-cd86-4013-bfd7-63faf0a1ec81)
+
+![Screenshot from 2024-05-06 14-12-56](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/6274644d-c0d9-421f-a486-e603be4de0cb)
+
+
+![Screenshot from 2024-05-06 14-20-06](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/fb0a8b49-95d9-47f0-9a43-318d98fe7bae)
+
+![Screenshot from 2024-05-06 15-00-27](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/85b06034-df1c-401b-b636-4411d39aa156)
+
+![Screenshot from 2024-05-06 15-03-29](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c1abe3dd-8f86-48ae-bcb7-9ae800539783)
+
+![Screenshot from 2024-05-06 15-18-52](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/6d4f666b-5bcb-4c35-af67-1486cad36717)
+
+![Screenshot from 2024-05-06 15-29-02](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/2cda0533-d8c8-4917-9038-3b5044c18423)
+
+![Screenshot from 2024-05-06 15-29-22](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d546a2a0-1527-4279-8809-abc8ef34e8a8)
+
+run_placement
+
+![picorv32a placement def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/37632e2c-e853-4bcc-90f4-7273351e569c)
+
+# Configure OpenSTA for post timing analysis
+create pre_sta.conf file and my_base.sdc file
+my_base.sdc
+
+set ::env(CLOCK_PORT) clk
+set ::env(CLOCK_PERIOD) 12.000
+#set ::env(SYNTH_DRIVING_CELL) sky130_vsdinv
+set ::env(SYNTH_DRIVING_CELL) sky130_fd_sc_hd__inv_8
+set ::env(SYNTH_DRIVING_CELL_PIN) Y
+set ::env(SYNTH_CAP_LOAD) 17.653
+
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set IO_PCT 0.2
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $IO_PCT]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $IO_PCT]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+
+#set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+
+
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+set_load  $cap_load [all_outputs]
+
+pre_sta.conf
+
+set_cmd_units -time ns -capacitance pF -current mA -voltage V -resistance kOhm -distance um
+read_liberty -max /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib
+read_liberty -min /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib
+read_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/workshop/results/synthesis/picorv32a.synthesis.v
+link_design  picorv32a
+read_sdc /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/my_base.sdc
+report_checks -path_delay min_max -fields {slew trans net cap input_pin}
+report_tns
+report_wns
+
+
+openlane
+type command: sta pre_sta.conf
+![Screenshot from 2024-05-06 17-27-42](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/be8ffc23-9d54-4e86-859d-59cfc78632f6)
+
+![Screenshot from 2024-05-06 17-27-52](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/3671a7a7-6468-4e2b-8cba-274bace93580)
+
 
 
