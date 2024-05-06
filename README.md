@@ -772,5 +772,32 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 
 ![Screenshot from 2024-05-06 22-19-00](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/768e3b8b-2d2a-469c-861c-509bde49d87c)
 
+# Day 5
+power distribution command:
+
+gen_pdn
+![Screenshot from 2024-05-06 22-26-22](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/6d44ffac-1f4c-4f1c-a2cd-d002ae9a764b)
+
+![Screenshot from 2024-05-06 22-26-27](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/ea0d1047-b00f-4ac8-8ec3-fbcd8f908874)
+
+![Screenshot from 2024-05-06 22-27-32](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7d26e5fe-9b23-4e06-8208-bbc600f3325e)
+
+Commands to load PDN def in magic 
+
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/workshop/tmp/floorplan
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 22-pdn.def &
+
+![Screenshot from 2024-05-06 22-33-39](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/500afffc-51d9-421a-beed-59fbd763e040)
+
+
+Routing strategy
+
+run_routing
+
+![Screenshot from 2024-05-06 22-41-13](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f41e6f41-1d35-421b-9cbb-71bc27070f6c)
+
+
+![Screenshot from 2024-05-06 22-45-41](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0a0b18e2-fdcd-41d4-a482-80c0aa83d11a)
 
 
