@@ -737,13 +737,40 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 ![Screenshot from 2024-05-06 20-00-46](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7f43811a-b67a-46ac-9e9a-ef7292ae4eab)
 
 
+
+# Post CTS analysis
 # Commands to be run in OpenLANE flow to do OpenROAD timing analysis after changes
 
 echo $::env(CTS_CLK_BUFFER_LIST)
+
 set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+
 echo $::env(CTS_CLK_BUFFER_LIST)
+
 echo $::env(CURRENT_DEF)
+
 set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/workshop/results/placement/picorv32a.placement.def
+
+![Screenshot from 2024-05-06 20-12-49](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/edefe99b-3cfb-4ff8-8239-032b6c09c5ab)
+
+report_clock_skew -hold
+
+![Screenshot from 2024-05-06 22-13-18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/9ba3d919-4144-4bce-8751-49c883d30807)
+
+report_clock_skew -setup
+
+![Screenshot from 2024-05-06 22-14-56](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/2adce49e-f4c7-4328-ab7a-371199e373b2)
+
+
+To insert back the clock_buffer_1
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+
+set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1]
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+
+![Screenshot from 2024-05-06 22-19-00](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/768e3b8b-2d2a-469c-861c-509bde49d87c)
 
 
 
