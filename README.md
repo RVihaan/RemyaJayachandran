@@ -440,3 +440,21 @@ Refer: https://github.com/nickson-jose/vsdstdcelldesign
 ![Screenshot from 2024-05-05 23-26-07](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8ea78c5d-5400-4b31-8ba2-5fb0d9c53e55)
 
 ![Screenshot from 2024-05-05 23-33-21](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/7fef41f7-c387-4c30-b333-fa2703b4511f)
+
+![Screenshot from 2024-05-05 23-32-17](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/3f4bdcd6-2502-4531-9a60-9a073da4360c)
+![Screenshot from 2024-05-05 23-33-21](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4d0fcd9c-9dc3-4dbf-86d6-9f2d1fb4335b)
+![Screenshot from 2024-05-06 09-22-55](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f15538d5-0c42-4204-92f3-14484d6edcdc)
+![Screenshot from 2024-05-06 09-23-07](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/9477763e-8b5d-46c8-b0c1-bec3053f186e)
+
+![Screenshot from 2024-05-06 09-46-57](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/56f27705-d923-452f-a2b9-1d74cc2fa31e)
+
+![Screenshot from 2024-05-06 09-47-05](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/1b12d367-bf73-469a-8593-ab0f57b7fc22)
+
+![Screenshot from 2024-05-06 09-47-29](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/424b5438-ae04-45d3-97f2-f6e3c2890b28)
+
+![Screenshot from 2024-05-06 09-50-20](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/6fae2d3e-e185-4631-928f-77ae72c5a0fa)
+
+![Screenshot from 2024-05-06 09-53-08](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/3e016934-92a3-41c0-9a0a-590c48ea2f69)
+
+copy the lef file to src file 
+cp sky130_vsdinv.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
