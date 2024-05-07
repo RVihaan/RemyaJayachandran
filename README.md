@@ -893,6 +893,12 @@ run_routing
 
 ![Screenshot from 2024-05-06 22-59-18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/61f91308-d729-41eb-990f-dd2e8531a543)
 
+Fastroute guide
+![Screenshot from 2024-05-07 12-04-30](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b9be51a8-3b44-45b3-a76a-afa1cf5c3ed2)
+
+![Screenshot from 2024-05-07 12-03-38](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/28cc10a0-1352-46bd-bbc4-bdb7a51e5677)
+
+
 Post Routing
 
 cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/workshop/results/routing/
@@ -907,6 +913,8 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 
 ![picorv32a def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5b7e99e8-b778-4da9-8375-17fb21ab9282)
+
+
 
 HAPPY LEARNING !!!
 
