@@ -821,6 +821,8 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ![Screenshot from 2024-05-06 23-02-31](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/edbcf407-9432-4dcc-a778-18f87529a7f5)
 
+![Screenshot from 2024-05-07 09-29-11](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/059f9ebf-3e1b-49e6-8aa5-7458ca64cc94)
+
 
 ![picorv32a def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5b7e99e8-b778-4da9-8375-17fb21ab9282)
 
