@@ -914,6 +914,25 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ![picorv32a def](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5b7e99e8-b778-4da9-8375-17fb21ab9282)
 
+# SPEC EXTRACTER
+
+git clone https://github.com/HanyMoussa/SPEF_EXTRACTOR.git
+
+install in tools folder
+
+cd /home/Desktop/work/tools/SPEF_EXTRACTOR
+
+ls -ltr
+
+python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/workshop/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/workshop/results/routing/picorv32a.def
+
+![Screenshot from 2024-05-07 12-15-11](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/38bff945-a72e-4779-bafc-64d71fe98f49)
+
+![Screenshot from 2024-05-07 12-16-53](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/1b63a5fa-daf4-4c1b-9003-9fa43a08d996)
+
+![Screenshot from 2024-05-07 13-02-58](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/268a7089-4ca6-4968-a5a4-ce2bb41a70cb)
+
+![Screenshot from 2024-05-07 13-05-03](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c148a96f-cfc3-443b-a40c-335e28a42dcc)
 
 
 HAPPY LEARNING !!!
