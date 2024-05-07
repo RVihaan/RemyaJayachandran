@@ -166,14 +166,16 @@ STA- OpenSTA (OpenROAD)
 
 # Get familiar to OpenSource EDA tool
 Steps: 
-# cd Desktop
-# cd work/tools/
-# cd operlane_working_dir
-# cd openlane
-# docker ./flow.tcl -interactive
-# % package require openlane 0.9
-# % prep -design picorv32a -tag workshop
+# cd Desktop/work/tools/openlane_working_dir/openlane/
 
+type commands:
+   docker ./flow.tcl -interactive
+      -- enters to interactive mode
+   package require openlane 0.9
+      -- select openlane
+   prep -design picorv32a -tag workshop
+       -- select the design named picorv32a, previous states saved in folder named workshop
+       
 ![WhatsApp Image 2024-04-29 at 3 20 41 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5eeabf20-66d6-4bc3-94b7-950d68b2bf0a)
 
 ![WhatsApp Image 2024-04-29 at 3 22 03 PM](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/baa4b747-a662-481e-806e-10e65cf85dd0)
