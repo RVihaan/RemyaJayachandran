@@ -252,7 +252,7 @@ type commands:
 # Flop ratio : No. of D FF/ No. of cells  = 1613/ 14876 = 0.1084 = 10. 84 %
 
 ........................................................................................................................................................
-# DAY2 : Good Fllor Plan Vs Bad Floorplan and Introduction to Library Cells
+# DAY2 : Good Floor Plan Vs Bad Floorplan and Introduction to Library Cells
 # FloorPlanning
 
 # % run_floorplan
@@ -854,7 +854,9 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 
 ![Screenshot from 2024-05-06 22-19-00](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/768e3b8b-2d2a-469c-861c-509bde49d87c)
 
-# Day 5 Power Distribution, Routing
+
+# Day 5 Final steps for RTL2GDS using tritonRoute and openSTA
+# Power Distribution, Routing
 
 power distribution command:
 
@@ -934,6 +936,89 @@ python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/d
 
 ![Screenshot from 2024-05-07 13-05-03](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/c148a96f-cfc3-443b-a40c-335e28a42dcc)
 
+
+# Additional Informations
+# Chip FloorPlanning Considerations
+
+Utilization Factor and Aspect Ratio: 
+
+In order to find out the Utilization Factor and Aspect Ratio, first we need to know how to define height and width of core and die areas.
+
+>> Core is an area in a chip which is used to place all the logic cells and components in a chip. It is the place where logic lies in a chip.
+>> Die is an area that encircles the core area and used for placing I/O related components.
+
+>> The height and width of core area will be decided by the netlist of the design. It will be based on the no.of components required in order to execute the logic and the height and width of the die area will be dependent on the core area height and width.
+>> Utilization Factor : Utilization Factor is defined as "The ratio of the core area occupied by the netlist to the total core area".For a good FloorPlan, The Utilization Factor should never be '1' because when the Utilization factor becomes '1' , there will be no place for adding additional logic if needed and it will be considered as a bad FloorPlan.
+>> Utilization Factor = (Area occupied by netlist / Total core area)
+>> Aspect Ratio : Aspect Ratio is defined as "The ratio of Height of the core to the width of the core". If the Aspect ratio is '1' , then the core is said to be in a square shape and other than '1' the core will be a rectangle.
+>> Aspect Ratio = (Height of the core / Width of the core)
+
+
+# Concept of pre-placed cells
+
+>> Reusing of already designed blocks by not designing them again and again.
+>> The most commonly used pre-placed blocks are Memory , comparators , Mux...
+>>  These blocks can be called as Macros (or) I.P's .
+>> We need to place these macros very carefully in such a way that if these blocks are more connected to input pins, then we should place these close to those input pins.
+>> These should be placed in a way such that the wiring length should be decreased.
+>> pre-placed cells- "Placing those blocks prior to placement stage that is in Floorplan stage"
+>> After placing those blocks in Floorplan stage we need to define some placement blockages in order to avoid Placing of other standard cell near to those blocks by the tool during placement stage.
+
+# De-coupling Capacitors
+
+>> Generally these pre-placed blocks will be high-power draining blocks.
+>> In some cases, the power they recieve from the power source will not be sufficient for them to perform switching i.e the signal will not be in the range of its noise margin because there will be a voltage drop in the inter-connecting wires
+>> dECOUPLING CAPACITORS- Decap cells are used -
+>> De-cap cells will be placed near to the blocks that will drain high power. When there is no switching, the De-cap cell will be connected to power source and gets charged to its high level
+>> when the switching is being performed the De-cap cells will be connected to the blocks and the power required for the block will be supplied by the De-cap cell, and when ever the switching stops again the De-cap cell will start to getting charged.
+>> these cells plays a crucial role in the circuit design.
+
+# Power Planning
+
+>> Decap cells have some limitations such as Leakage power and increase in the area of chip.
+>> To overcome these we use a technique called Powerplanning
+>> two issues happens when there is cotinous switching- voltage drop, Ground bounce
+>>
+>> Voltage drop occurs when a group of cells are simultaneously switching from 0 to 1, then every cell needs the power and In case the power is supplying from one source, there may occur the shotage of power and drop in the input voltage happens at that place. This is called as "Voltage Drop". The problem occurs only when the voltage level goes below the noise margin.
+>>
+>> Ground Bounce occurs when a group of cells are simultaneoisly switching from 1 to 0, then every cell dumps the power to th ground simultaneously to the same ground pin. In this case the ground instead of being at 0 experiences a short rise in the voltage and this is called as "Ground Bounce".The problem occurs only when the voltage level goes above the noise margin.
+>>
+>> To overcome this, Power Planning is used. In this technique two different Power meshes are used, one for Vdd and another one for Ground.These meshes are prepared by using top two metal layers because they should have less voltage drop. These meshes will be spread across the design and are connected to multiple sources of Vdd and Ground.
+>>
+>> whenever a cell needs power to switch from 0 to 1, it takes from nearest Vdd layer and if a cell needs to drain the power it will drain it to the nearest Ground Layer.
+>>
+# Pin placement and logical cell placement blockage
+
+>> Pin Placement is one of the crucial step in the design process. Bad pin placement results increase in the length of wire used for connectivity, which inturn results in some adverse affects. Pins should be placed in such a way that the required for connecting them to the blocks should be as less as possible. 
+
+>> For example if a pin is driving two blocks then that pin should be placed close to those two blocks.
+>> Hence The order of input pins and output pins is random. 
+>> pins should be placed based on the connectivity not based on the order
+>> pins used for clock signals are larger in size when compared to pins used for signals, this is because clock is one of the important signal in the design and delays and voltage drops in the clock signal leads to failure of the chip.
+>> That is the reason why we use higher metal layers for routing the clock in the design.
+>
+>> After completing the pin placement, we should use placement blockages outside of the core area and inside of the die area.
+>> This avoids placement and routing tool to use that space for placement and routing, as it is the area dedicated only for pin placement purpose.
+>
+# Optimize placement using estimated wire-length and capacitance
+
+>> During Placement we should definitely consider the estimated wire length and place the cells according to it.
+>> Wire length is estimated by calculating the distance from input source of those cells and the distance to the output sinks that are being driven by them.
+
+# Congestion aware placement using RePlace
+
+>> After successful Floorplanning, the next step in the design process is Placement.
+>> Placement stage will consist of two stages- Global Placement - In Global Placement stage tool decides the places for all standard cells in the design. Detailed Placement - In Detailed Placement stage the tool places all the standard cells in their designated places and legalization of the Placement will be done. Legalization is nothing but making sure that standard cells are not overlapped on each other in the design and are placed with in the site rows of the design.
+>
+# Pre-layout timing analysis and importance of good clock tree
+>> From PnR point of view, while designing standard cell set two things must be considered
+>> Input and output ports must lie on the intersection of the Vertical and Horizontal tracks
+>> Width of the standard cell should be an odd multiple of the track pitch and height should be an odd multiple of track vertical pitch.
+
+# References
+1. https://github.com/google/skywater-pdk
+2. https://github.com/nickson-jose/vsdstdcelldesign
+3. NASSCOM Digital SoC VLSI Dsign Training workshop - VSD IAT- course materials
 
 HAPPY LEARNING !!!
 
