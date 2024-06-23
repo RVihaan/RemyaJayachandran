@@ -71,7 +71,7 @@ Do the same procedure with -Ofast and observe the difference.
 For -O1, there was 15 instruction to execute the C program, by using -Ofast the number of instructions reduced to 12 for the same rogram. 
 
 
-# Task 2: Write C-program for Clock Cycle divider
+# Task 2: Write C-program for Clock Cycle divider and compile with RISC V GCC
 
 Simple program to divide 1 MHz clock signal
 
