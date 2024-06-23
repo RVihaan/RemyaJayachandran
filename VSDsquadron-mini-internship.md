@@ -71,3 +71,56 @@ Do the same procedure with -Ofast and observe the difference.
 For -O1, there was 15 instruction to execute the C program, by using -Ofast the number of instructions reduced to 12 for the same rogram. 
 
 
+# Task 2: Write C-program for Clock Cycle divider
+
+Simple program to divide 1 MHz clock signal
+
+![Screenshot from 2024-06-23 21-58-19](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/d7a83077-a139-4c9b-8b83-4ea28ba928ae)
+
+Output:
+
+![Screenshot from 2024-06-23 21-58-51](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a7c5a7be-f088-46e6-99b9-933496fd4aab)
+
+![Screenshot from 2024-06-23 22-01-41](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8c4d5471-202d-4ea4-98b8-e29596a63de7)
+
+# RISC V: 
+![Screenshot from 2024-06-23 22-02-43](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/4dfee6cf-0a97-471f-bb8d-8aa4505a6547)
+
+![Screenshot from 2024-06-23 22-02-49](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/112ef71e-3b1b-45c7-8069-34805ed3c5a4)
+
+![Screenshot from 2024-06-23 22-03-04](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/105ae4bf-d135-4813-8638-af2a3fa10285)
+
+
+![Screenshot from 2024-06-23 22-03-42](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5bbf3340-8b81-454d-a5a1-51264df754c3)
+
+
+
+![Screenshot from 2024-06-23 22-04-09](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/302a9ce5-b299-4d87-93b6-318f138375de)
+
+![Screenshot from 2024-06-23 22-04-43](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5c134ee0-a50d-4250-a620-f68fa86dcf7a)
+
+![Screenshot from 2024-06-23 22-05-11](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/28ebbaf7-29da-4bd9-bac3-a53d5e813c4f)
+
+
+![Screenshot from 2024-06-23 22-05-47](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/1655ba1f-de33-4b30-bc6c-8333e2455fab)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
