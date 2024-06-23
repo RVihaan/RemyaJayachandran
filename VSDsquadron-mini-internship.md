@@ -7,4 +7,16 @@ The VSDSquadron Mini RISC-V development board is a RISC-V development board. It 
 >> Flexible Communication Interfaces: Offers multiple communication protocols including USART, I2C, and SPI for versatile connectivity options
 >> High-Speed Memory: Equipped with 2KB SRAM for volatile data storage, 16KB CodeFlash for program memory, and additional 1920B for bootloader functionalities
 
+# Assignment 1
+>> leafpad sum1ton.c &
+>>
+>>![Screenshot from 2024-06-23 10-38-49](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/893c0446-6c1f-4e2c-9d1c-8a1669c747e9)
+
+>> gcc sum1ton.c
+>> ./a.out
+>> ![Screenshot from 2024-06-23 10-39-04](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/de59a9f9-e5bd-41f8-8a5b-7159bba1b913)
+
+>> 
+
+
 
