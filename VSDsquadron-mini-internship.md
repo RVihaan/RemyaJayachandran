@@ -1,4 +1,4 @@
-# VSDsquadron-mini-internship
+# VSDsquadron-mini-Reseach internship 2024
 The VSDSquadron Mini RISC-V development board is a RISC-V development board. It contains a 32-bit RISC-V core. It has 16KB of flash memory, 2KB SRAM and operates at 24Mhz. The board has 15 GPIO pins and supports protocols such as I2C, SPI, and USART.
 # Features:
 >> Core Processor - The board is powered by CH32V003F4U6 chip with 32-bit RISC-V core based on RV32EC instruction set, optimized for high-performance computing with support for 2-level interrupt nesting and supports 24MHz system main frequency in the product function
