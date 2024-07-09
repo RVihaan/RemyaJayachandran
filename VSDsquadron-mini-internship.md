@@ -105,12 +105,21 @@ Output:
 ![Screenshot from 2024-06-23 22-05-47](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/1655ba1f-de33-4b30-bc6c-8333e2455fab)
 
 
+# Task 3: Compile the c program with the spike command and observe it with -o1 and -ofast Command
+
+Command: riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o clkDiv.o clkDiv.c
+ -o1 command is used for moderate and quick level of optimizations for debugging the code
+
+![Screenshot from 2024-07-09 20-27-24](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a5c156a1-07be-408b-bdd6-8a00b542a7a2)
 
 
+![Screenshot from 2024-07-09 20-32-36](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0fafb686-02a9-42f8-bcca-a2f0260c0118)
 
 
+![Screenshot from 2024-07-09 20-38-29](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/ed864f8c-76dd-45f7-8493-5c536abaef65)
 
 
+![Screenshot from 2024-07-09 20-40-18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/bd720c3a-9b89-4ed7-89c7-0468b0912db5)
 
 
 
