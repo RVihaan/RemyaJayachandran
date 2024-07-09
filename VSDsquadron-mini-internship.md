@@ -187,6 +187,77 @@ The main instruction formats include:
 
 6. opcode: A 7-bit field used to specify the opcode of the instruction
 
+# I -type instruction for immediate transfer
+
+imm[11:0]: A 12-bit immediate value.
+
+rs1: A 5-bit field specifying the source register.
+
+funct3: A 3-bit field specifying the function code for the operation.
+
+rd: A 5-bit field specifying the destination register.
+
+opcode: A 7-bit field specifying the opcode of the instruction.
+
+# S-Type Instruction Format is used for store operations, which involve writing data from a register to memory. This format includes a 12-bit immediate value split across two fields.
+
+S-Type instruction format consists of the following fields:
+
+imm[11:5]: The upper 7 bits of the 12-bit immediate value.
+
+rs2: A 5-bit field specifying the second source register.
+
+rs1: A 5-bit field specifying the first source register.
+
+funct3: A 3-bit field specifying the function code for the operation.
+
+imm[4:0]: The lower 5 bits of the 12-bit immediate value.
+
+opcode: A 7-bit field specifying the opcode of the instruction.
+
+# B-Type Instruction is used for conditional branch instructions. This format includes a 12-bit immediate value split across several fields.
+
+
+imm[12]: The 12th bit of the immediate value
+
+imm[10:5]: Bits 10 to 5 of the immediate value
+
+rs2: A 5-bit field specifying the second source register
+
+rs1: A 5-bit field specifying the first source register
+
+funct3: A 3-bit field specifying the function code for the operation
+
+imm[4:1]: Bits 4 to 1 of the immediate value
+
+imm[11]: The 11th bit of the immediate value
+
+opcode: A 7-bit field specifying the opcode of the instruction
+
+
+# U-Type Instruction Format is used for instructions that involve a 20-bit immediate value that is shifted left by 12 bits. This format is used for instructions like LUI (Load Upper Immediate) and AUIPC (Add Upper Immediate to PC).
+
+
+imm[31:12]: A 20-bit immediate value.
+
+rd: A 5-bit field specifying the destination register
+
+opcode: A 7-bit field specifying the opcode of the instruction
+
+# J-Type Instruction is used for jump instructions, which combines a large immediate value and an offset for branching.
+
+
+imm[20]: The 20th bit of the immediate value.
+
+imm[10:1]: Bits 10 to 1 of the immediate value.
+
+imm[11]: The 11th bit of the immediate value.
+
+imm[19:12]: Bits 19 to 12 of the immediate value.
+
+rd: A 5-bit field specifying the destination register.
+
+opcode: A 7-bit field specifying the opcode of the instruction.
 
 
 
