@@ -259,9 +259,73 @@ rd: A 5-bit field specifying the destination register.
 
 opcode: A 7-bit field specifying the opcode of the instruction.
 
+![image](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/54a40e78-ac5e-478c-8029-3591524b5ec6)
+
 
 # Task 4: Assignment
 
 1. ADD r1,r2,r3
-   
+   R-type
+32-bit Instruction Code is 0000000 00011 00010 000 00001 0110011
 
+opcode: 0110011
+rd: 00001
+func3: 000
+rs1: 00010
+rs2: 00011
+func7: 0000000
+
+
+2. SUB r3,r1,r2
+   R-type
+32-bit Instruction Code is 0100000 00010 00001 000 00011 0110011
+
+3. AND r2,r1,r3
+      R-type
+      32-bit Instruction Code is 0000000 00011 00001 111 00010 0110011
+4. OR r8,r2,r5
+  
+       32-bit Instruction Code is 0000000 00101 00010 110 01000 0110011
+
+5.XOR r8,r1,r4
+         32-bit Instruction Code is 0000000 00100 00001 100 01000 0110011
+
+ 6. SLT r10,r2,r4
+            SLT-Set Less Than
+            32-bit Instruction Code is 0000000 00100 00010 010 01010 0110011
+
+7. ADDI r12,r3,5
+               I-type
+               opcode: 0010011
+
+               32-bit Instruction Code is 000000000101 00011 000 01100 0010011
+
+8. SW r3,r1,4
+                  SW- Store word
+                         Immediate data 04- 000000000100
+                  32-bit Instruction Code is 0100011 00011 00001 000000000100
+
+   9. SRL r16,r11,r2
+                      SRL- Shift Logically Right
+                     32-bit Instruction Code is 0000000 00010 01011 101 10000 0110011
+
+      10. BNE r0,r1,20
+                         Branch not equal
+
+                         32-bit Instruction Code is 1100011 001 00000 00001 000000010100
+
+      11. BEQ r0,r0,15
+                             Branch if equal
+
+                             32-bit Instruction Code is 000000001111 00000 000 00000 0001100
+
+      12. LW r13,r11,2
+                                 Load word
+                                 32-bit Instruction Code is 0000011 01011 01101 000000000000010
+
+      13. SLL r15,r11,r2
+                                     shift logical left
+                                     32-bit Instruction Code is 0000000 00010 00011 001 01111 0110011
+
+
+                                     
