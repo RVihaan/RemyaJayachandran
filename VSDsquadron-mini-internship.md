@@ -166,11 +166,26 @@ The main instruction formats include:
 
  ![image](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/829926d1-ba4f-4aef-a645-063077146b47)
 
-![image](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/cb430d65-dece-4431-99cb-8c81074ca893)
+ ![image](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/cb430d65-dece-4431-99cb-8c81074ca893)
 
 
 
+![image](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f398ca55-40ee-41c9-85e6-fa346ba59f97)
 
+# R-type for Register to register operations
+# R-Type instruction format consists of six fields:
+
+ 1. funct7: A 7-bit field used to specify the function code for the operation.
+
+ 2. rs2: A 5-bit field used to specify the second source register.
+
+3. rs1: A 5-bit field used to specify the first source register.
+
+4. funct3: A 3-bit field used to specify the function code for the operation.
+
+5. rd: A 5-bit field used to specify the destination register.
+
+6. opcode: A 7-bit field used to specify the opcode of the instruction
 
 
 
