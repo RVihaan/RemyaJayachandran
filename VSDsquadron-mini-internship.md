@@ -107,6 +107,8 @@ Output:
 
 # Task 3: Compile the c program with the spike command and observe it with -o1 and -ofast Command
 
+Testing the SPIKE Simulator
+
 Command: riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o clkDiv.o clkDiv.c
  -o1 command is used for moderate and quick level of optimizations for debugging the code
 
@@ -140,9 +142,32 @@ Assembly Code Address with -ofast Command:
 
 ![Screenshot from 2024-07-09 20-53-38](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/562c69f1-1e1f-4845-8ee4-3c5f5f2543c8)
 
-
+gcc and spike outputs are same
 
 # Task 4: RISC-V Instructions
+
+RISC-V Instruction Set Architecture (ISA) is a free and open ISA for designing processors
+
+The main instruction formats include:
+
+ R-Type: Used for register-register operations.
+
+ I-Type: Used for immediate operations.
+
+ S-Type: Used for store operations.
+
+ B-Type: Used for branch operations.
+
+ U-Type: Used for upper immediate operations.
+
+ J-Type: Used for jump operations.
+
+ (The two types of Base Integer Instructions, 1. RV32I: The 32-bit base integer instruction set. 2.RV64I: The 64-bit base integer instruction set)
+
+ ![image](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/829926d1-ba4f-4aef-a645-063077146b47)
+
+![image](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/cb430d65-dece-4431-99cb-8c81074ca893)
+
 
 
 
