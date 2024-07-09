@@ -235,7 +235,7 @@ imm[11]: The 11th bit of the immediate value
 opcode: A 7-bit field specifying the opcode of the instruction
 
 
-# U-Type Instruction Format is used for instructions that involve a 20-bit immediate value that is shifted left by 12 bits. This format is used for instructions like LUI (Load Upper Immediate) and AUIPC (Add Upper Immediate to PC).
+# U-Type Instruction Format is used for instructions that involve a 20-bit immediate value that is shifted left by 12 bits. 
 
 
 imm[31:12]: A 20-bit immediate value.
