@@ -112,6 +112,10 @@ Command: riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o clkDiv.o clkDiv.
 
 ![Screenshot from 2024-07-09 20-27-24](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/a5c156a1-07be-408b-bdd6-8a00b542a7a2)
 
+Assembly Code Address with -o1 Command:
+
+![Screenshot from 2024-07-09 20-48-51](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0cf67c84-172c-49c4-8762-d3a4d6496f91)
+
 
 ![Screenshot from 2024-07-09 20-32-36](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0fafb686-02a9-42f8-bcca-a2f0260c0118)
 
@@ -122,6 +126,19 @@ Command: riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o clkDiv.o clkDiv.
 ![Screenshot from 2024-07-09 20-40-18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/bd720c3a-9b89-4ed7-89c7-0468b0912db5)
 
 
+-ofast command is used for aggressive optimizations, prioritizes performance over strict compliance and accuracy and may lead to non-standard behavior
+Command: riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o clkDiv.o clkDiv.c
+
+
+![Screenshot from 2024-07-09 20-51-54](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b1245a2d-2ca5-4b38-ba25-fd2f33f5ce37)
+
+
+Assembly Code Address with -ofast Command:
+
+![Screenshot from 2024-07-09 20-53-23](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e49e5b34-0b0e-47cb-916e-79de3938cee4)
+
+
+![Screenshot from 2024-07-09 20-53-38](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/562c69f1-1e1f-4845-8ee4-3c5f5f2543c8)
 
 
 
