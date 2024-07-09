@@ -260,4 +260,8 @@ rd: A 5-bit field specifying the destination register.
 opcode: A 7-bit field specifying the opcode of the instruction.
 
 
+# Task 4: Assignment
+
+1. ADD r1,r2,r3
+   
 
