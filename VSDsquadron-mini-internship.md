@@ -327,5 +327,85 @@ func7: 0000000
                                      shift logical left
                                      32-bit Instruction Code is 0000000 00010 00011 001 01111 0110011
 
+ #  Task 5: To create Verilog Code and Testbench for RISC-V and to verify the functional simulation and to generate Waveforms
 
-                                     
+Install iverilog and Gtkwave
+>> sudo apt install iverilog gtkwave
+>> 
+![Screenshot from 2024-07-10 21-47-19](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5d19b7e8-6ae6-4a64-93d9-13d8d328c068)
+
+Clone the repository 
+
+>> git clone https://github.com/vinayrayapati/iiitb_rv32i
+>> cd iiitb_rv32i
+ ![Screenshot from 2024-07-10 21-50-30](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/5bbb8690-c719-4618-b2d9-a2f10dba473f)
+
+![Screenshot from 2024-07-10 21-51-32](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b630485e-cff0-4d97-bbf5-aa637ccb5293)
+
+To simulate and run the verilog code , enter the following commands in your terminal.
+
+ >> iverilog -o iiitb_rv32i rj_rv32i.v rj_rv32i_tb.v
+
+                       ![Screenshot from 2024-07-10 22-00-55](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e1d6e050-0615-4eab-b45b-de6c09f5fd57)
+
+>> ./iiitb_rv32i
+
+![Screenshot from 2024-07-10 22-03-56](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f4bd1e10-76b6-4ef2-9e5d-b5695836d638)
+
+To visualize the output use the command
+
+>> gtkwave iiitb_rv32i.vcd
+>>
+![Screenshot from 2024-07-10 22-04-41](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/8837728e-c89b-4e38-8430-f00c8851267e)
+
+
+Check each instructions
+
+![Screenshot from 2024-07-10 22-10-18](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/07a3e688-a125-4b37-b828-b246127e1989)
+
+![Screenshot from 2024-07-10 22-04-49](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/06dbb01a-602b-47e2-a962-df8f7c2e50cd)
+
+1. ADD r1,r2,r3
+                       
+     ![Screenshot from 2024-07-10 22-15-46](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/f36b0bcb-12b0-4502-8283-661581d49433)
+
+
+2. SUB r3,r1,r2
+   
+![Screenshot from 2024-07-10 22-18-38](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b91a2aea-55e7-495a-ad70-8c599a7e73e8)
+
+3. AND r2, r1, r3
+
+   ![Screenshot from 2024-07-10 22-21-33](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0e6c92eb-0eda-44fb-8baf-3d0cf9f36c93)
+
+ 4. OR r8, r2, r5
+    ![Screenshot from 2024-07-10 22-23-04](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/472b6d9b-c2fa-48d7-9e7e-8a1ac8d3059b)
+
+    5. XOR r8, r1, r4
+       
+![Screenshot from 2024-07-10 22-24-15](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/586ce7e4-b943-4484-ae7b-8573407bb472)
+
+6. SLT r10, r2, r4
+![Screenshot from 2024-07-10 22-26-37](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/0fafe0bf-59d3-41ce-be36-243191031737)
+
+7.. ADDI r12, r3, 5
+   ![Screenshot from 2024-07-10 22-27-04](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/99e36de6-0b17-42ca-b48e-c37e2129d4c4)
+
+8. SW r3, r1, 4
+    ![Screenshot from 2024-07-10 22-27-31](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/e833d044-241e-430f-88d5-51a6c6308556)
+
+9. SRL r16, r11, r2
+    ![Screenshot from 2024-07-10 22-29-41](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/997567bf-ad91-4fa3-86bf-fe29b317445e)
+
+10. BNE r0, r1, 20
+   ![Screenshot from 2024-07-10 22-30-13](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/2e4df6a8-970b-4991-9788-de55d60fe1e6)
+11. SLL r15, r11, r2
+    ![Screenshot from 2024-07-10 22-31-32](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/9c4b6e60-8c3d-47ce-9586-da76af172040)
+
+![Screenshot from 2024-07-10 22-32-17](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/b7da4042-d77a-40b5-b33f-d9ed52d5f691)
+
+
+This task made to understand the instruction sets. The output waveform for the list of instructions are obtained in GTKWAVE.
+
+# Task 6
+
