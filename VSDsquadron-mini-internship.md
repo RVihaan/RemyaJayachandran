@@ -429,31 +429,62 @@ This project involves designing a digital clock divider circuit using the VSDSqu
 >>
 # Program: Verilog code for clock divider
 
-module clkDiv(
+
+
+   module clkDiv(
+
    input clk,          // Input clock signal
+   
    input reset,        // Reset signal
+   
    output reg clk_o1
+   
 );
 
-reg [31:0] N1; //counter1
+    reg [31:0] N1; //counter
 
-// Parameters for division
-parameter DIV = 10_000_000; // Desired frequency
+    parameter DIV = 10_000_000; // Desired frequency
 
 always @(posedge clk or posedge reset) 
-begin
-   if (reset) begin
-      N1 <= 0;
-      clk_o1 <= 0;
-   end else begin
-      if (N1 == DIV - 1) begin
+
+    begin
+
+          if (reset) 
+           
+           begin
+   
+              N1 <= 0;
+      
+             clk_o1 <= 0;
+      
+           end 
+   
+          else
+   
+        begin
+   
+      if (N1 == DIV - 1) 
+      
+      begin
+      
           N1 <= 0;
+          
           clk_o1 <= ~clk_o1;
-     end else begin
+          
+     end 
+     
+     else
+     
+     begin
+     
           N1 <= N1 + 1;
+          
      end
+     
    end
+   
 end
+
 endmodule
 
 # Testing & verification
