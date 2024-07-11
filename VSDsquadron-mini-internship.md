@@ -421,6 +421,9 @@ This project involves designing a digital clock divider circuit using the VSDSqu
 
 # VSDminiquadron Board: VSDSquadron, a cutting-edge development board based on the RISC-V architecture that is fully open-source. This board presents an exceptional opportunity for individuals to learn about RISC-V and VLSI chip design utilizing only open-source tools, starting from the RTL and extending all the way to the GDSII. The possibilities for learning and advancement with this technology are limitless.
 
+![image](https://github.com/RVihaan/RemyaJayachandran/assets/149866052/76d7868e-6a9c-4874-bd0b-24bf2ad48835)
+
+
 # Circuit Connection:
 
 >> Input Clock Source to VSDminiquadron board: Connect the clock source to the clock input pin on the VSDSquadron Mini. 
