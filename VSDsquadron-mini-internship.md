@@ -418,28 +418,27 @@ This project involves designing a digital clock divider circuit using the VSDSqu
 >> Breadboard
 >> Jumper Wires
 >> LEDs
->>
+
+# VSDminiquadron Board: VSDSquadron, a cutting-edge development board based on the RISC-V architecture that is fully open-source. This board presents an exceptional opportunity for individuals to learn about RISC-V and VLSI chip design utilizing only open-source tools, starting from the RTL and extending all the way to the GDSII. The possibilities for learning and advancement with this technology are limitless.
+
 # Circuit Connection:
 
->> Input Clock Source to VSDminiquadron board: Connect the clock source to the clock input pin on the VSDSquadron Mini. Ensure proper voltage levels matching the FPGA's requirements.
+>> Input Clock Source to VSDminiquadron board: Connect the clock source to the clock input pin on the VSDSquadron Mini. 
 >> Output Pins: Configure multiple GPIO pins on the VSDminiquadron board as clock outputs. 
 >> Power and Ground: Connect the power supply and ground to the VSDminiquadron board
 >>
-# Program
+# Program: Verilog code for clock divider
 
 module clkDiv(
    input clk,          // Input clock signal
    input reset,        // Reset signal
-   output reg clk_o1, 
-   output reg clk_o2  
+   output reg clk_o1
 );
 
 reg [31:0] N1; //counter1
-reg [31:0] N2; //counter2
 
 // Parameters for division
-parameter DIV_1 = 10_000_000; // Desired frequency1
-parameter DIV_2 = 5_000_000; // Desired frequency2
+parameter DIV = 10_000_000; // Desired frequency
 
 always @(posedge clk or posedge reset) 
 begin
@@ -447,7 +446,7 @@ begin
       N1 <= 0;
       clk_o1 <= 0;
    end else begin
-      if (N1 == DIV_1 - 1) begin
+      if (N1 == DIV - 1) begin
           N1 <= 0;
           clk_o1 <= ~clk_o1;
      end else begin
@@ -455,20 +454,12 @@ begin
      end
    end
 end
-always @(posedge clk or posedge reset) 
-begin
-    if (reset) begin
-        N2 <= 0;
-        clk_o2 <= 0;
-    end else begin
-        if (N2 == DIV_2 - 1) begin
-            N2 <= 0;
-            clk_o2 <= ~clk_o2;
-        end else begin
-            N2 <= N2 + 1;
-        end
-     end
-  end
 endmodule
+
+# Testing & verification
+1. Using Vivado simulator synthesize and implement the clock divider circuit
+2. Generate the bitstream
+3. Dump the bitstream to VSDminquadron board and verify the output
+4. Verify the output for different conditions
 
 
