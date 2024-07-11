@@ -407,5 +407,68 @@ Check each instructions
 
 This task made to understand the instruction sets. The output waveform for the list of instructions are obtained in GTKWAVE.
 
-# Task 6
+# Task 6 Clock Divider Circuit using VSDminiquadron
+
+This project involves designing a digital clock divider circuit using the VSDSquadron Mini board. The circuit functions to reduce the input clock signal frequency, generating lower frequency outputs essential for all integrated circuits designs.
+
+# Components Required:
+>> Power Supply
+>> VSDSquadron Mini FPGA Board
+>> Clock Source
+>> Breadboard
+>> Jumper Wires
+>> LEDs
+>>
+# Circuit Connection:
+
+>> Input Clock Source to VSDminiquadron board: Connect the clock source to the clock input pin on the VSDSquadron Mini. Ensure proper voltage levels matching the FPGA's requirements.
+>> Output Pins: Configure multiple GPIO pins on the VSDminiquadron board as clock outputs. 
+>> Power and Ground: Connect the power supply and ground to the VSDminiquadron board
+>>
+# Program
+
+module clkDiv(
+   input clk,          // Input clock signal
+   input reset,        // Reset signal
+   output reg clk_o1, 
+   output reg clk_o2  
+);
+
+reg [31:0] N1; //counter1
+reg [31:0] N2; //counter2
+
+// Parameters for division
+parameter DIV_1 = 10_000_000; // Desired frequency1
+parameter DIV_2 = 5_000_000; // Desired frequency2
+
+always @(posedge clk or posedge reset) 
+begin
+   if (reset) begin
+      N1 <= 0;
+      clk_o1 <= 0;
+   end else begin
+      if (N1 == DIV_1 - 1) begin
+          N1 <= 0;
+          clk_o1 <= ~clk_o1;
+     end else begin
+          N1 <= N1 + 1;
+     end
+   end
+end
+always @(posedge clk or posedge reset) 
+begin
+    if (reset) begin
+        N2 <= 0;
+        clk_o2 <= 0;
+    end else begin
+        if (N2 == DIV_2 - 1) begin
+            N2 <= 0;
+            clk_o2 <= ~clk_o2;
+        end else begin
+            N2 <= N2 + 1;
+        end
+     end
+  end
+endmodule
+
 
