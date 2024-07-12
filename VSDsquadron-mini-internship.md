@@ -426,10 +426,16 @@ This project involves designing a digital clock divider circuit using the VSDSqu
 
 # Circuit Connection:
 
->> Input Clock Source to VSDminiquadron board: Connect the clock source to the clock input pin on the VSDSquadron Mini. 
->> Output Pins: Configure multiple GPIO pins on the VSDminiquadron board as clock outputs. 
->> Power and Ground: Connect the power supply and ground to the VSDminiquadron board
->>
+Input Clock Source to VSDminiquadron board: Connect the clock source to the clock input pin on the VSDSquadron Mini. 
+
+
+Output Pins: Configure multiple GPIO pins on the VSDminiquadron board as clock outputs.
+
+
+Power and Ground: Connect the power supply and ground to the VSDminiquadron board
+
+ 
+
 # Program: Verilog code for clock divider
 
 
