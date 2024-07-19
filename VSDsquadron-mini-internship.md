@@ -502,4 +502,10 @@ endmodule
 3. Dump the bitstream to VSDminquadron board and verify the output
 4. Verify the output for different conditions
 
+# TASK 6: Clock Divider Circuit using VSDSquadronMINI board and digital ICs
+
+![WhatsApp Image 2024-07-18 at 6 02 38 PM](https://github.com/user-attachments/assets/d5ab446f-35af-4dcf-ada5-a56ef3f855cf)
+
+
+
 
