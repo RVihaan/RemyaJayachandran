@@ -497,7 +497,71 @@ end
 endmodule
 
 
+#  program - LED on and off
 
+#include <ch32v00x.h>
+#include <stdio.h>
+#include <debug.h>
+
+#define clock_PIN GPIO_Pin_6  // PD6
+#define LED_PIN GPIO_Pin_3           // PD3
+
+void NMI_Handler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
+void HardFault_Handler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
+void Delay_Init(void);
+void Delay_Ms(uint32_t n);
+
+void setup() {
+    GPIO_InitTypeDef GPIO_InitStructure = {0};  // Structure variable used for GPIO configuration
+    
+    // Enable clock for GPIOD
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+    
+    // Sound Sensor Pin Configuration as input floating
+    GPIO_InitStructure.GPIO_Pin = clock_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;  // Defined as Input Floating Type
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+    
+    // LED Pin Configuration as output push-pull
+    GPIO_InitStructure.GPIO_Pin = LED_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  // Defined as Output Push-Pull Type
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  // Defined Speed
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+}
+
+void loop() {
+    // Check if sound sensor is triggered
+    if (GPIO_ReadInputDataBit(GPIOD, clock_PIN)) {
+        // Turn on LED
+        GPIO_SetBits(GPIOD, LED_PIN);
+        Delay_Ms(1000);  // Keep LED on for 1 s
+        // Turn off LED
+        GPIO_ResetBits(GPIOD, LED_PIN);
+        
+    }
+    Delay_Ms(1000);  
+}
+
+int main() {
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);  // Configure the NVIC priority group
+    SystemCoreClockUpdate();  // Update system core clock
+    Delay_Init();  // Initialize delay function
+    setup();  // Configure GPIO pins
+
+    while (1) {
+        loop();
+    }
+    
+    return 0;
+}
+
+void NMI_Handler(void) {}
+void HardFault_Handler(void)
+{
+    while (1)
+    {
+    }
+}
 
 # Testing & verification
 1. Using Vivado simulator synthesize and implement the clock divider circuit
@@ -512,6 +576,7 @@ endmodule
 
 https://github.com/user-attachments/assets/084224da-3bce-485c-a53d-dd5417e78131
 
+https://github.com/user-attachments/assets/f0b4841f-5903-479e-a5cc-3c6412603830
 
 
 
