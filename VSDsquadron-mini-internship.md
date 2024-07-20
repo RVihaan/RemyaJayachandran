@@ -516,13 +516,13 @@ void setup() {
     
     // Enable clock for GPIOD
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
-    
-    // Sound Sensor Pin Configuration as input floating
+   
     GPIO_InitStructure.GPIO_Pin = clock_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;  // Defined as Input Floating Type
     GPIO_Init(GPIOD, &GPIO_InitStructure);
     
     // LED Pin Configuration as output push-pull
+    
     GPIO_InitStructure.GPIO_Pin = LED_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  // Defined as Output Push-Pull Type
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  // Defined Speed
@@ -562,6 +562,9 @@ void HardFault_Handler(void)
     {
     }
 }
+
+
+****************** END *******************
 
 # Testing & verification
 1. Using Vivado simulator synthesize and implement the clock divider circuit
