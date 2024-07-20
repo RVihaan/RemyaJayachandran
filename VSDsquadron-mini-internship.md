@@ -496,6 +496,9 @@ end
 
 endmodule
 
+
+
+
 # Testing & verification
 1. Using Vivado simulator synthesize and implement the clock divider circuit
 2. Generate the bitstream
@@ -505,6 +508,9 @@ endmodule
 # TASK 6: Clock Divider Circuit using VSDSquadronMINI board and digital ICs
 
 ![WhatsApp Image 2024-07-18 at 6 02 38 PM](https://github.com/user-attachments/assets/d5ab446f-35af-4dcf-ada5-a56ef3f855cf)
+
+
+https://github.com/user-attachments/assets/084224da-3bce-485c-a53d-dd5417e78131
 
 
 
