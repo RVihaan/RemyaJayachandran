@@ -434,7 +434,8 @@ Output Pins: Configure multiple GPIO pins on the VSDminiquadron board as clock o
 
 Power and Ground: Connect the power supply and ground to the VSDminiquadron board
 
- 
+ ![image](https://github.com/user-attachments/assets/ad2c6791-bbb5-40a8-87aa-331800618a59)
+
 
 # Program: Verilog code for clock divider
 
@@ -581,5 +582,7 @@ https://github.com/user-attachments/assets/084224da-3bce-485c-a53d-dd5417e78131
 
 https://github.com/user-attachments/assets/f0b4841f-5903-479e-a5cc-3c6412603830
 
+
+Task 6 completed
 
 
