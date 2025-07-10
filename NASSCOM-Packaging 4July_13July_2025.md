@@ -54,8 +54,12 @@ Package: QFN Package
 >> Package Design and Modelling
 
 >> ![Uploading WhatsApp Image 2025-07-10 at 4.42.38 PM (2).jpeg…]()
+>>
+>> 
+![WhatsApp Image 2025-07-10 at 4 42 38 PM (1)](https://github.com/user-attachments/assets/9c415093-077b-4a1d-8d5a-54b5267315c1)
 
 
+![WhatsApp Image 2025-07-10 at 4 42 38 PM (3)](https://github.com/user-attachments/assets/f94e5d56-d49e-41e8-a04d-54a9ff41c768)
 
 
 
