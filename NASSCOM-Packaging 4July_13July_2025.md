@@ -2,17 +2,23 @@
 
 # Module 1: Packaging Evolution: From Basics to 3D Integration
 
-# Lab
+# Module 2:From Wafer to Package: Assembly and Manufacturing Essential
+
+
+# Lab 1: Thermal simulation of Semiconductor Packages with ANSYS
 Tool - ANSYS 
-simulator- Icepak
-FlipChip package
+simulator module- Icepak
+Package selected: FlipChip package
+
 ![WhatsApp Image 2025-07-09 at 12 10 54 PM](https://github.com/user-attachments/assets/e442719a-1b96-45a1-b29a-8bfb4661afcc)
+
 ![WhatsApp Image 2025-07-10 at 9 58 50 AM](https://github.com/user-attachments/assets/36535ab1-d3a8-4244-a456-2bafc9d16c9a)
+
 ![WhatsApp Image 2025-07-10 at 9 58 51 AM](https://github.com/user-attachments/assets/4d97956a-4037-424b-85b3-9952c1bf1712)
 
 
 
-QFN Package
+Package: QFN Package
 
 ![WhatsApp Image 2025-07-10 at 10 19 27 AM](https://github.com/user-attachments/assets/78d7e576-09d9-4c45-8743-10c87d693ec0)
 
@@ -41,6 +47,13 @@ QFN Package
 ![WhatsApp Image 2025-07-10 at 10 19 31 AM (1)](https://github.com/user-attachments/assets/f03784d4-255d-4a1a-b88c-dc2df929c399)
 
 
+# Module 4: Ensuring Package reliability: Testing and Performance Validation
+
+# Lab 2
+
+>> Package Design and Modelling
+
+>> ![Uploading WhatsApp Image 2025-07-10 at 4.42.38 PM (2).jpeg…]()
 
 
 
