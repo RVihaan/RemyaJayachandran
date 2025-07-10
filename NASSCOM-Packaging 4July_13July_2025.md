@@ -52,7 +52,8 @@ Package: QFN Package
 # Lab 2
 
 >> Package Design and Modelling
-
+              Simulator module: Q3D design
+>> 
 >> ![WhatsApp Image 2025-07-10 at 4 42 38 PM (2)](https://github.com/user-attachments/assets/4c10fff1-177a-45f3-a04c-663200c43898)
 
 
@@ -90,7 +91,7 @@ Package: QFN Package
 
 ![WhatsApp Image 2025-07-10 at 4 42 37 PM (1)](https://github.com/user-attachments/assets/3207e9f5-d0d3-4bae-afb8-b23f9dcd51f6)
 
-
+Thermal simulation- IcePak tool
 
 
 
