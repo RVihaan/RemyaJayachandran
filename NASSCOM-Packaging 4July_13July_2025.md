@@ -53,13 +53,42 @@ Package: QFN Package
 
 >> Package Design and Modelling
 
->> ![Uploading WhatsApp Image 2025-07-10 at 4.42.38 PM (2).jpeg…]()
->>
->> 
+>> ![WhatsApp Image 2025-07-10 at 4 42 38 PM (2)](https://github.com/user-attachments/assets/4c10fff1-177a-45f3-a04c-663200c43898)
+
+
+
 ![WhatsApp Image 2025-07-10 at 4 42 38 PM (1)](https://github.com/user-attachments/assets/9c415093-077b-4a1d-8d5a-54b5267315c1)
 
 
 ![WhatsApp Image 2025-07-10 at 4 42 38 PM (3)](https://github.com/user-attachments/assets/f94e5d56-d49e-41e8-a04d-54a9ff41c768)
+
+
+![WhatsApp Image 2025-07-10 at 4 42 38 PM](https://github.com/user-attachments/assets/819c9abb-ede6-4e12-9785-8d6088b2acdb)
+
+
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (10)](https://github.com/user-attachments/assets/4a530a1d-a521-4197-9b7f-86715fe98e6f)
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (8)](https://github.com/user-attachments/assets/687679d0-ebc3-421b-9a44-aed46141955a)
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (7)](https://github.com/user-attachments/assets/a5ad8e28-dd5b-4259-9275-ce554a5dcf5e)
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (6)](https://github.com/user-attachments/assets/835cb817-d11a-4d79-b004-65e85c2d44e0)
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (5)](https://github.com/user-attachments/assets/de936e1b-fa13-494f-b45f-d195b22aac18)
+
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (4)](https://github.com/user-attachments/assets/e54b552d-3739-4c61-b686-4e152e03d629)
+
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (3)](https://github.com/user-attachments/assets/cc5e5c61-d133-40f2-b7e9-eb75f17aaa7b)
+
+
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (2)](https://github.com/user-attachments/assets/480fd0b2-16c0-4f9b-b18a-a205e8022692)
+
+
+![WhatsApp Image 2025-07-10 at 4 42 37 PM (1)](https://github.com/user-attachments/assets/3207e9f5-d0d3-4bae-afb8-b23f9dcd51f6)
 
 
 
