@@ -13,6 +13,11 @@ FlipChip package
 
 
 QFN Package
+
+![WhatsApp Image 2025-07-10 at 10 19 27 AM](https://github.com/user-attachments/assets/78d7e576-09d9-4c45-8743-10c87d693ec0)
+
+![WhatsApp Image 2025-07-10 at 10 19 28 AM (1)](https://github.com/user-attachments/assets/8145c5fa-286c-49b4-9435-44f27c606793)
+
 ![WhatsApp Image 2025-07-10 at 10 19 33 AM](https://github.com/user-attachments/assets/1d001cef-8944-4968-ba4b-8fc347c707cc)
 
 ![WhatsApp Image 2025-07-10 at 10 19 33 AM (2)](https://github.com/user-attachments/assets/2a4401f5-33b7-4a68-8d0f-910ecd7f1ae8)
@@ -35,9 +40,8 @@ QFN Package
 
 ![WhatsApp Image 2025-07-10 at 10 19 28 AM (2)](https://github.com/user-attachments/assets/51e09029-fd53-49ca-8a79-54625947b041)
 
-![WhatsApp Image 2025-07-10 at 10 19 28 AM (1)](https://github.com/user-attachments/assets/8145c5fa-286c-49b4-9435-44f27c606793)
 
-![WhatsApp Image 2025-07-10 at 10 19 27 AM](https://github.com/user-attachments/assets/78d7e576-09d9-4c45-8743-10c87d693ec0)
+
 
 
 
