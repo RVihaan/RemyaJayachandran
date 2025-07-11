@@ -88,6 +88,9 @@ Advanced Substrates are
         Heterogeneous Integration – Enables integration of different chip types (logic, memory, analog, etc.).
 
         Thermal & Power Distribution – Assists in heat dissipation and distributes power efficiently.
+        Passive vs. Active Interposers:
+                     Passive: No logic, just routing and vias
+                     Active: Includes power delivery, clocking, or even memory logic
 
 >> Types of Interposers:
 
@@ -125,7 +128,51 @@ Selecting the right semiconductor packaging depends on multiple criteria across 
 
 <img width="1038" height="584" alt="image" src="https://github.com/user-attachments/assets/a0e03481-22d1-47b2-bd94-6dc984e28c0e" />
 
-# Module 2:From Wafer to Package: Assembly and Manufacturing Essential
+# Module 2: From Wafer to Package: Assembly and Manufacturing Essential
+     Semiconductor packaging is the final phase of semiconductor manufacturing, where chips (dies) are encased in a protective material and made ready for integration into electronic devices. This supply chain is complex, global, and involves several highly specialized processes and companies.
+           ATMP – Assembly, Testing, Marking, and Packaging
+
+    1. Wafer Fabrication (Upstream)
+      Performed by IDMs (Integrated Device Manufacturers) or foundries like TSMC, Samsung, or Intel.
+      Output: Bare silicon wafers with integrated circuits.
+
+    2. Wafer Testing
+       Electrical tests performed before dicing to identify good dies.
+
+       Tools: Automated Test Equipment (ATE).
+
+       
+     3. Dicing and Die Attach
+      Wafers are cut into individual dies.
+
+       Dies are placed on substrates using adhesives or solders.
+
+     4. Semiconductor Packaging
+       Protects chips from physical damage and ensures electrical connectivity.
+
+    Types: Wire bonding, Flip chip, Fan-out / fan-in WLP, 2.5D/3D IC packaging
+
+    Players: 
+     OSATs (Outsourced Semiconductor Assembly and Test):ASE, Amkor, JCET, Powertech, UTAC
+
+     IDMs (in-house packaging): Intel, Samsung
+
+    5. Package Testing
+       Post-packaging test to ensure functionality.
+
+     Reliability tests under heat, stress, and electrical load.
+
+     6. Substrate & Materials Supply
+       Substrates: High-density interconnect (HDI) materials that sit between the chip and PCB.
+
+        Materials: Epoxy resins, underfills, solder balls, bonding wires.
+
+     7. Final Assembly / System Integration
+       Packaged chips are mounted on PCBs and integrated into systems (e.g., smartphones, servers). EMS (Electronics Manufacturing Services) firms may handle this
+
+<img width="1036" height="583" alt="image" src="https://github.com/user-attachments/assets/72663590-4a61-46be-8f9d-2de84ccff303" />
+
+
 
 
 # Lab 1: Thermal simulation of Semiconductor Packages with ANSYS
