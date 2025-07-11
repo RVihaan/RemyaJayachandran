@@ -346,6 +346,11 @@ Package: QFN Package
 
 <img width="1039" height="583" alt="image" src="https://github.com/user-attachments/assets/820496b7-9946-4209-9c52-8a7b71fbd627" />
 
+
+<img width="1055" height="581" alt="image" src="https://github.com/user-attachments/assets/28a3fc0a-09a1-43e6-8bc1-9747da509ed5" />
+
+
+
 # Lab 2
 
 >> Package Design and Modelling
