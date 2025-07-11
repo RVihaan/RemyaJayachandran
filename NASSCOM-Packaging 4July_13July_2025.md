@@ -275,10 +275,13 @@ Wire bonding is a critical process used in microelectronics to create electrical
 
 
 
-# Lab 1: Thermal simulation of Semiconductor Packages with ANSYS
+# lECTURE 3: Lab 1: Thermal simulation of Semiconductor Packages with ANSYS
 Tool - ANSYS 
 simulator module- Icepak
 Package selected: FlipChip package
+>> Introduction And Getting Started With ANSYS Electronics Desktop
+
+>>     ANSYS Electronics Desktop (AEDT) is an integrated multi-physics simulation platform that unifies electromagnetic, signal integrity, thermal, and electro-mechanical analysis tools. It is extensively used for the design and evaluation of high-speed electronic circuits and complex systems.
 
 ![WhatsApp Image 2025-07-09 at 12 10 54 PM](https://github.com/user-attachments/assets/e442719a-1b96-45a1-b29a-8bfb4661afcc)
 
