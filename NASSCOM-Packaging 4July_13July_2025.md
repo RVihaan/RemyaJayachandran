@@ -218,7 +218,62 @@ Selecting the right semiconductor packaging depends on multiple criteria across 
         Protection against:Moisture, Mechanical shock, Corrosion
 
     >> Wafer Pre-Preparation - Grinding And Dicing
-    >> 
+    >> Clean room: wafer preparation process inside an ISO Class 7 cleanroom of an ATMP
+    
+    <img width="1048" height="583" alt="image" src="https://github.com/user-attachments/assets/dff1d2ed-b919-4e10-9574-f6b91b898555" />
+
+    
+Link: https://youtu.be/hR5orrmpoeE
+
+>> Wire bond packaging:
+
+<img width="1039" height="364" alt="image" src="https://github.com/user-attachments/assets/e06f1667-5560-4c4d-baab-a62c9be6256a" />
+
+https://youtu.be/jliiUV0vDic
+
+<img width="910" height="519" alt="image" src="https://github.com/user-attachments/assets/3d73ff55-4a91-40db-9628-d128f23aec9d" />
+
+
+<img width="1040" height="338" alt="image" src="https://github.com/user-attachments/assets/68901b48-216d-4c80-9d41-ce5ccc5d18d3" />
+
+<img width="912" height="577" alt="image" src="https://github.com/user-attachments/assets/1bbacd62-1055-42ab-ace7-6019d0a7c328" />
+
+Wire bonding is a critical process used in microelectronics to create electrical interconnections between a semiconductor device (e.g., a chip) and its packaging or between two semiconductor devices. Here’s a general wire bonding procedure, typically for gold ball bonding or aluminum wedge bonding, which are the most common types.
+
+>> Steps:
+                 1. Die Attach (Die Bonding)-
+                                     Apply adhesive to the die pad or leadframe, Pick-and-place die from the wafer to the substrate, Cure the adhesive using heat (e.g., 150–200°C for 1–2 hours, depending on material).
+                  2. Die Attach Cure (Bake)
+                  3. Wire Bonding
+                  4. Wire Bond Inspection
+                  5. Molding (Encapsulation)
+                  6. Post-Mold Cure (PMC)
+
+<img width="1031" height="541" alt="image" src="https://github.com/user-attachments/assets/53ee318a-0faa-47bf-ac6b-e28be2d17d21" />
+
+<img width="1047" height="469" alt="image" src="https://github.com/user-attachments/assets/e1745b4c-1759-41f8-b133-40efe6cdd00a" />
+
+<img width="710" height="565" alt="image" src="https://github.com/user-attachments/assets/77fefff7-f101-45c6-80cd-7a528b7b6e78" />
+
+<img width="1030" height="584" alt="image" src="https://github.com/user-attachments/assets/3e05adc3-6f5a-40d6-85ac-97bcc1bdcb87" />
+
+>> Flip Chip Assembly - Bump Formation And Underfill
+
+     Flip chip packaging improves electrical performance and increases I/O density by mounting the semiconductor die face-down directly onto the substrate, enabling shorter interconnect paths and more efficient use of space.
+
+
+>>      In flip chip assembly, bump formation and underfill are two critical steps that enable robust electrical and mechanical connections between the semiconductor die and the substrate. Bump formation involves creating small conductive bumps—typically made of solder (e.g., SnAgCu) or copper—on the die's bond pads using techniques like electroplating, solder paste printing, or stud bumping. These bumps serve as the connection interface between the die and the package or PCB. Once the die is flipped and aligned onto the substrate, it is reflowed to create solid metallurgical joints. After reflow, underfill is applied—an epoxy resin dispensed into the gap between the die and substrate. The underfill material flows by capillary action and is then cured thermally. This process enhances the mechanical strength, improves thermal cycling reliability, and protects solder joints from stress due to differences in thermal expansion between the die and the substrate. Together, bump formation and underfill ensure the electrical integrity and durability of flip chip assemblies.
+
+   <img width="1051" height="591" alt="image" src="https://github.com/user-attachments/assets/12457060-b429-439a-9569-8be56027b1fa" />
+
+>> Wafer Level Packaging And Conclusion
+<img width="1037" height="303" alt="image" src="https://github.com/user-attachments/assets/7bd9adde-daa7-453f-8620-f5a43e87a231" />
+<img width="1037" height="580" alt="image" src="https://github.com/user-attachments/assets/5df3a052-e7ef-41dd-8f5c-1a2173c6dd9b" />
+<img width="1037" height="582" alt="image" src="https://github.com/user-attachments/assets/47b9a39a-0c07-42ae-9364-df706e8d3796" />
+
+<img width="1042" height="594" alt="image" src="https://github.com/user-attachments/assets/a8f8aa70-5fed-4382-8255-3fce515fcea4" />
+
+
 
 # Lab 1: Thermal simulation of Semiconductor Packages with ANSYS
 Tool - ANSYS 
@@ -230,6 +285,7 @@ Package selected: FlipChip package
 ![WhatsApp Image 2025-07-10 at 9 58 50 AM](https://github.com/user-attachments/assets/36535ab1-d3a8-4244-a456-2bafc9d16c9a)
 
 ![WhatsApp Image 2025-07-10 at 9 58 51 AM](https://github.com/user-attachments/assets/4d97956a-4037-424b-85b3-9952c1bf1712)
+
 
 
 
