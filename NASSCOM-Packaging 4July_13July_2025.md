@@ -174,6 +174,46 @@ Selecting the right semiconductor packaging depends on multiple criteria across 
 
 
 
+>>  Introduction to a Package Manufacturing Unit (ATMP):
+>> ATMP is a key part of the back-end of semiconductor manufacturing. It refers to the set of processes that take a silicon wafer—after front-end fabrication—and prepare it for shipment and integration into electronic systems.
+ 
+    The ATMP process involves four core activities: 
+     Assembly, Testing, Marking, and Packaging. 
+     The ATMPs could be OSATs (like ASE, Amkor, TATA etc.) or in-house ATMPs of IDMs (like Intel, Samsung, Micron) or Foundries (like TSMC, Samsung Foundry)
+
+     <img width="1034" height="586" alt="image" src="https://github.com/user-attachments/assets/51cfd335-3665-402b-ba5e-6df3eecfd1d6" />
+
+
+     <img width="1032" height="324" alt="image" src="https://github.com/user-attachments/assets/79330031-6f0f-497b-8a05-1caa07938e97" />
+>> ATMP: 
+     1. Assembly
+                Goal: Physically attach the die to a package or substrate.
+
+                 Includes: Die attach (using epoxy, solder), Wire bonding or flip chip connections, Encapsulation with molding compounds
+                 Advanced forms: System-in-Package (SiP), 2.5D/3D packaging, Fan-Out WLP
+
+   2. Testing
+              Electrical testing of the packaged chip to ensure it meets performance specifications.
+
+          Burn-in testing: Accelerated aging under stress conditions.
+
+          Final Test: Confirms correct operation before shipment.
+
+          Test equipment: Supplied by Teradyne, Advantest, National Instruments
+
+   3. Marking
+          Laser or inkjet identification codes, batch numbers, and traceability info are printed on the package.
+
+          Includes: Branding (logos, part numbers) Traceability (lot numbers, QR codes)
+
+ 4. Packaging
+           Final form factor is completed:
+
+        Plastic encapsulated packaging (e.g., QFN, BGA, CSP)
+
+        Advanced packages (e.g., FOWLP, CoWoS, EMIB)
+
+        Protection against:Moisture, Mechanical shock, Corrosion
 
 # Lab 1: Thermal simulation of Semiconductor Packages with ANSYS
 Tool - ANSYS 
