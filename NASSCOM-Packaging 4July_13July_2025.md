@@ -68,6 +68,7 @@ Key Materials:
 <img width="1043" height="595" alt="image" src="https://github.com/user-attachments/assets/4cdb498f-8786-4e35-9236-20eac20ae039" />
 
 Figure above shows the anatomy of some of the commonly used leadframe and laminate based packages and advanced substrates
+
 Advanced Substrates are
 
       2D: Dies placed side-by-side on the same substrate
@@ -75,6 +76,18 @@ Advanced Substrates are
       2.3D: Uses organic interposers
       2.5D: Silicon interposer for high-speed interconnects (e.g.: CoWoS)
 
+ Interposers, RDLs And 2.5D/3D Packaging Approaches
+
+    Interposers in Semiconductor Packaging
+          An interposer is a substrate or intermediate layer used in semiconductor packaging to electrically connect and mechanically support one or more dies (chips) with each other or with a package substrate or PCB. Think of it as a “bridge” that helps route signals between high-density components in advanced packaging solutions.
+    Key Functions of an Interposer:
+        Signal Routing – Provides fine-pitch connections between chips and the main board.
+
+        I/O Fan-Out – Spreads the densely packed I/Os of a die over a larger area.
+
+        Heterogeneous Integration – Enables integration of different chip types (logic, memory, analog, etc.).
+
+        Thermal & Power Distribution – Assists in heat dissipation and distributes power efficiently.
 
 # Module 2:From Wafer to Package: Assembly and Manufacturing Essential
 
