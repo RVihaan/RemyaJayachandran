@@ -217,6 +217,9 @@ Selecting the right semiconductor packaging depends on multiple criteria across 
 
         Protection against:Moisture, Mechanical shock, Corrosion
 
+    >> Wafer Pre-Preparation - Grinding And Dicing
+    >> 
+
 # Lab 1: Thermal simulation of Semiconductor Packages with ANSYS
 Tool - ANSYS 
 simulator module- Icepak
