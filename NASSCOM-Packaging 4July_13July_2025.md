@@ -1,11 +1,79 @@
 # NASSCOM-Packaging 4July_13July_2025
 
+<img width="1039" height="583" alt="image" src="https://github.com/user-attachments/assets/083dc621-5363-4f7d-84b2-4d02484da3c7" />
+
+
 # Module 1: Packaging Evolution: From Basics to 3D Integration
 L1: Introduction to Semiconductor Packaging
  Semiconductor packaging is the final step in the semiconductor device manufacturing process, where the processed chip (or die) is encased in a protective housing and connected to the external environment, such as a printed circuit board (PCB). This packaging safeguards the chip, enables electrical connections, and facilitates heat dissipation.
 
 <img width="1032" height="572" alt="image" src="https://github.com/user-attachments/assets/4ced9073-e23c-4772-b426-54e0992264e4" />
 
+<img width="434" height="159" alt="image" src="https://github.com/user-attachments/assets/0a603af3-f129-4ce6-a2b5-28c9a0b499f8" />
+
+Die is protected by the packaging system as shown in the above Figure
+>> Key Functions of Semiconductor Packaging are Protection, Electrical Interface, Thermal Management, Mechanical Support
+>> Packaging and Testing Industry
+   
+   <img width="1047" height="580" alt="image" src="https://github.com/user-attachments/assets/07f382f0-17e0-4848-9ddf-71829b84c1cc" />
+
+
+
+Choosing the appropriate semiconductor package is a crucial aspect of electronic system design, as it directly influences performance, cost, thermal efficiency, physical size, and overall reliability.
+
+<img width="1040" height="578" alt="image" src="https://github.com/user-attachments/assets/acfc9935-9187-4478-98d7-ac00a3e88ad9" />
+
+<img width="631" height="329" alt="image" src="https://github.com/user-attachments/assets/9f0ea5fe-195e-4bd3-95d9-e0f6b64f1f38" />
+
+ >> Common Packaging Types:
+> >  DIP (Dual In-line Package):	Older style with two rows of pins. Easy to plug into sockets or breadboards.
+> > QFP (Quad Flat Package)	:Pins on all four sides. Used in high pin-count ICs
+> >  BGA (Ball Grid Array)	:Uses tiny solder balls on the bottom. Good for high performance & density.
+> > CSP (Chip Scale Package)	:Very small, almost the same size as the chip itself. Ideal for mobile use.
+> > WLCSP (Wafer-Level CSP)	Packaged at wafer level: no separate packaging step. Smallest and cheapest.
+> > TSOP (Thin Small Outline Package)	Compact: used in memory ICs like flash or DRAM.
+
+<img width="1044" height="588" alt="image" src="https://github.com/user-attachments/assets/c659fa5d-9741-410b-af9d-b60f02817ea1" />
+
+Advanced/Modern Packaging Trends:
+3D Packaging – Multiple dies stacked vertically to save space and increase performance.
+System-in-Package (SiP) – Combines several chips and passive components in one package.
+Fan-Out Packaging – Redistributes the connection pads to allow more I/Os in a small footprint.
+Chiplets – Smaller chips integrated into a single package (popular in AMD and Intel designs).
+
+
+
+A typical IC package consists of:
+
+Die: The semiconductor die 
+Carrier/ Substrate: The carrier or substrate is the intermediate structure on which the die sits and provides both mechanical support and electrical contact.
+Die-to-carrier interconnections: The die is connected to the substrate using bond wires or solder bumps
+Carrier-to-Board interconnections: The substrate is often soldered/ connected to the PCB for integration into larger systems using pins, leads balls or lands.
+
+Key Materials:
+>> Substrate – Usually a resin-based PCB material or ceramic.
+>> Encapsulant – Epoxy resin that protects the chip.
+>> Leads/Balls – Metal connections made of copper, tin, gold, or alloys.
+>> Thermal Interface Material (TIM) – Enhances heat transfer from the chip to the package or heatsink.
+>> 
+<img width="1048" height="585" alt="image" src="https://github.com/user-attachments/assets/49a54217-2311-4aa2-abb1-0eee742f3e1b" />
+
+<img width="1043" height="578" alt="image" src="https://github.com/user-attachments/assets/b01aeb1c-387d-4e4b-a253-aec440c0d65d" />
+
+
+<img width="2596" height="1096" alt="image" src="https://github.com/user-attachments/assets/666c31cb-01bb-4633-b367-13579a2ee321" />
+
+
+
+<img width="1043" height="595" alt="image" src="https://github.com/user-attachments/assets/4cdb498f-8786-4e35-9236-20eac20ae039" />
+
+Figure above shows the anatomy of some of the commonly used leadframe and laminate based packages and advanced substrates
+Advanced Substrates are
+
+      2D: Dies placed side-by-side on the same substrate
+      2.1D: Adds RDL for better routing
+      2.3D: Uses organic interposers
+      2.5D: Silicon interposer for high-speed interconnects (e.g.: CoWoS)
 
 
 # Module 2:From Wafer to Package: Assembly and Manufacturing Essential
