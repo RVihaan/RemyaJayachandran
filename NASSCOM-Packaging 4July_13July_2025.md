@@ -283,6 +283,12 @@ Package selected: FlipChip package
 
 >>     ANSYS Electronics Desktop (AEDT) is an integrated multi-physics simulation platform that unifies electromagnetic, signal integrity, thermal, and electro-mechanical analysis tools. It is extensively used for the design and evaluation of high-speed electronic circuits and complex systems.
 
+     FLIPCHIP BGA PACKAGE
+      Step 1 : Open AEDT and launch Icepak
+
+      
+
+
 ![WhatsApp Image 2025-07-09 at 12 10 54 PM](https://github.com/user-attachments/assets/e442719a-1b96-45a1-b29a-8bfb4661afcc)
 
 ![WhatsApp Image 2025-07-10 at 9 58 50 AM](https://github.com/user-attachments/assets/36535ab1-d3a8-4244-a456-2bafc9d16c9a)
@@ -322,6 +328,23 @@ Package: QFN Package
 
 
 # Module 4: Ensuring Package reliability: Testing and Performance Validation
+>>   Introduction to Package Testing and Electrical Functionality Checks
+>>       Integrated circuits (ICs) undergo testing at various stages of the manufacturing process to verify their performance, reliability, and functionality. These tests are conducted both at the semiconductor foundry and at outsourced semiconductor assembly and test (OSAT) facilities.
+
+<img width="1040" height="575" alt="image" src="https://github.com/user-attachments/assets/996e2366-015c-4b78-aac1-191a7a664795" />
+
+>> Foundry Testing Stages
+
+<img width="1085" height="599" alt="image" src="https://github.com/user-attachments/assets/4e83fefb-62ab-433e-b84b-0ad06401c673" />
+
+<img width="1064" height="578" alt="image" src="https://github.com/user-attachments/assets/a2ad14a7-c1c4-4593-b9af-94c42466592a" />
+
+<img width="1042" height="575" alt="image" src="https://github.com/user-attachments/assets/5d14b47c-0537-4f46-b627-c0b9eb522fee" />
+
+<img width="1059" height="587" alt="image" src="https://github.com/user-attachments/assets/1d5e57db-7b4e-42ad-a8b8-a493c952fe77" />
+
+
+<img width="1039" height="583" alt="image" src="https://github.com/user-attachments/assets/820496b7-9946-4209-9c52-8a7b71fbd627" />
 
 # Lab 2
 
