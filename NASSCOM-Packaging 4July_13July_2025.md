@@ -181,10 +181,12 @@ Selecting the right semiconductor packaging depends on multiple criteria across 
      Assembly, Testing, Marking, and Packaging. 
      The ATMPs could be OSATs (like ASE, Amkor, TATA etc.) or in-house ATMPs of IDMs (like Intel, Samsung, Micron) or Foundries (like TSMC, Samsung Foundry)
 
-     <img width="1034" height="586" alt="image" src="https://github.com/user-attachments/assets/51cfd335-3665-402b-ba5e-6df3eecfd1d6" />
+     
+  <img width="1034" height="586" alt="image" src="https://github.com/user-attachments/assets/51cfd335-3665-402b-ba5e-6df3eecfd1d6" />
 
 
-     <img width="1032" height="324" alt="image" src="https://github.com/user-attachments/assets/79330031-6f0f-497b-8a05-1caa07938e97" />
+     
+   <img width="1032" height="324" alt="image" src="https://github.com/user-attachments/assets/79330031-6f0f-497b-8a05-1caa07938e97" />
 >> ATMP: 
      1. Assembly
                 Goal: Physically attach the die to a package or substrate.
