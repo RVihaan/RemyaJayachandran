@@ -1,6 +1,12 @@
 # NASSCOM-Packaging 4July_13July_2025
 
 # Module 1: Packaging Evolution: From Basics to 3D Integration
+L1: Introduction to Semiconductor Packaging
+ Semiconductor packaging is the final step in the semiconductor device manufacturing process, where the processed chip (or die) is encased in a protective housing and connected to the external environment, such as a printed circuit board (PCB). This packaging safeguards the chip, enables electrical connections, and facilitates heat dissipation.
+
+<img width="1032" height="572" alt="image" src="https://github.com/user-attachments/assets/4ced9073-e23c-4772-b426-54e0992264e4" />
+
+
 
 # Module 2:From Wafer to Package: Assembly and Manufacturing Essential
 
