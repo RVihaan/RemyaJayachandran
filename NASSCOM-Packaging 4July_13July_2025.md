@@ -89,6 +89,42 @@ Advanced Substrates are
 
         Thermal & Power Distribution – Assists in heat dissipation and distributes power efficiently.
 
+>> Types of Interposers:
+
+        | Type                   | Material                 | Use Case/Advantages                                             |
+     | ---------------------- | ------------------------ | --------------------------------------------------------------- |
+     | **Silicon Interposer** | High-resistivity silicon | Precise, high-density routing; commonly used in 2.5D packaging. |
+     | **Organic Interposer** | PCB-like materials       | Lower cost, good for less complex designs.                      |
+     | **Glass Interposer**   | Glass substrate          | Promising for RF and optical applications; still emerging.      |
+
+ 
+    >> Interposers- Allows for greater integration without the yield and cost penalties of large monolithic chips, Supports high-speed, short-length interconnects, reducing signal loss and power consumption, Enables custom or modular chiplet architectures in AI, HPC, and data center applications. Types: Silicon, Organic, Glass
+
+    >> Redistribution Layers (RDL): RDL, or Redistribution Layer, is a crucial metal interconnect layer added during the packaging process to re-route the I/O pads of a semiconductor die to new locations. This is especially important in advanced packaging techniques like Fan-Out Wafer-Level Packaging (FO-WLP) or Flip-Chip. It is used to:
+    Repositions I/O pads to enable better spacing and routing.
+    Expands connection area for external interconnects (e.g., solder balls or microbumps).
+    Facilitates higher I/O density without increasing die size.
+    Supports custom routing for heterogeneous integration or multi-die systems.
+
+    >> Original I/O pads on the die are placed in a dense array (usually near the edges). RDL traces are created using photolithography and metallization to fan out these I/Os to a wider pitch or different pattern. Solder balls or microbumps are then attached to the new RDL pads, ready for mounting onto a substrate or interposer.
+    
+
+>>      "2.5D/3D Integration" typically refers to the process of combining 2.5D and 3D elements in digital design, development, or manufacturing workflows. The meaning varies depending on the context (e.g., gaming, animation, chip design, or PCB manufacturing).
+>>     Combining 2D sprites with 3D environments (e.g., characters in 2D moving in a 3D space), Camera manipulation in a 3D environment to give the illusion of depth in 2D assets, Lighting and shading applied to 2D elements to match 3D surroundings.
+
+>>     2.5D: Dies are connected laterally on an interposer using micro-bumps.
+>>     3D: Stacked dies interconnected vertically using Through-Silicon Vias (TSVs).
+>> 
+<img width="1042" height="587" alt="image" src="https://github.com/user-attachments/assets/19fd3bf4-ebd7-4db5-ba38-63bfbd625111" />
+
+COB- Chip on Board
+
+
+Comaparison
+Selecting the right semiconductor packaging depends on multiple criteria across performance, reliability, form factor and cost.
+
+<img width="1038" height="584" alt="image" src="https://github.com/user-attachments/assets/a0e03481-22d1-47b2-bd94-6dc984e28c0e" />
+
 # Module 2:From Wafer to Package: Assembly and Manufacturing Essential
 
 
