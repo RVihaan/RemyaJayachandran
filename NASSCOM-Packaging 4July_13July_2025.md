@@ -487,25 +487,27 @@ Summary
 >>                 Die - Material : Silicon
                    Dimensions : 3mm x 3mm
                    Die Height : 200 micron
->>              Substrate - Material : FR4
+                   
+>>                  Substrate - Material : FR4
                             Dimensions : 5mm x 5mm
                             Height : 500 micron
 
-               Die Attach -  Material : Modified Epoxy
+  >>                 Die Attach -  Material : Modified Epoxy
                             Dimensions : 3mm x 3mm
                             Thickness : 100 micron
 
-               Die Bond Pads -Material : Copper
+  >>              Die Bond Pads -Material : Copper
                               Dimensions : 0.2mm x 0.2mm
                               Thickness : 5 micron
 
-              Substrate Bond Pads- Material : Copper
+   >>                  Substrate Bond Pads- Material : Copper
                                   Dimensions : 0.2mm x 0.2mm
                                   Thickness : 10 micron
-              Bond Wire           - Material : Gold wire
+                                  
+   >>                     Bond Wire   - Material : Gold wire
                                    Type: JEDEC 4-point
 
-                Mold Compound- Material : Epoxy
+  >>                 Mold Compound- Material : Epoxy
                                Thickness : 1.2mm
                                   
 >> Launch AEDT and select Q3D
