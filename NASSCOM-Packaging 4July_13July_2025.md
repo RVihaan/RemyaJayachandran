@@ -476,14 +476,54 @@ Summary
 
 
 
-# Lab 2
+# Lab 2: Package Design and Modeling- Building a Semiconductor Package from Scratch
 
 >> Package Design and Modelling
               Simulator module: Q3D design
 >> 
+>>           this lab exercise is to build the complete cross-section of a wire bond package, including die, substrate, bonding wires, and mold compound, rather than performing any simulation or analyses
+>>
+>>             Package Specifications:
+>>                 Die - Material : Silicon
+                   Dimensions : 3mm x 3mm
+                   Die Height : 200 micron
+>>              Substrate - Material : FR4
+                            Dimensions : 5mm x 5mm
+                            Height : 500 micron
+
+               Die Attach -  Material : Modified Epoxy
+                            Dimensions : 3mm x 3mm
+                            Thickness : 100 micron
+
+               Die Bond Pads -Material : Copper
+                              Dimensions : 0.2mm x 0.2mm
+                              Thickness : 5 micron
+
+              Substrate Bond Pads- Material : Copper
+                                  Dimensions : 0.2mm x 0.2mm
+                                  Thickness : 10 micron
+              Bond Wire           - Material : Gold wire
+                                   Type: JEDEC 4-point
+
+                Mold Compound- Material : Epoxy
+                               Thickness : 1.2mm
+                                  
+>> Launch AEDT and select Q3D
+>> Creating the Die and Substrate in AEDT- Define the working unit
+                Modeler -> Units...
+                Choose mm or um as the working unit for creating the model.
+
 >> ![WhatsApp Image 2025-07-10 at 4 42 38 PM (2)](https://github.com/user-attachments/assets/4c10fff1-177a-45f3-a04c-663200c43898)
 
-
+>>      Create the Die Geometry- Select the rectangle tool from the ribbon or using the Menus (Draw -> Rectangle) to draw a rectangle
+                                   double click on CreateRectangle Model -> Rectangle1 to open up its Properties Dialog box.
+                                     Specify the position with one corner at the origin (0, 0, 0) and the dimensions as 3mm x 3mm
+                                             Select Model -> Rectangle1 and from the menu bar: Modeler -> Surface -> Thicken Sheet
+                                                        ->  set the thickness to 200 microns (0.2mm)   
+   >>     Assign Material Properties
+                      Open -> Properties Dialog box either by double clicking on Model -> Rectangle1
+                               Rename the geometry to Die
+                                    Choose Silicon as the material from the Material Library
 
 ![WhatsApp Image 2025-07-10 at 4 42 38 PM (1)](https://github.com/user-attachments/assets/9c415093-077b-4a1d-8d5a-54b5267315c1)
 
@@ -493,7 +533,11 @@ Summary
 
 ![WhatsApp Image 2025-07-10 at 4 42 38 PM](https://github.com/user-attachments/assets/819c9abb-ede6-4e12-9785-8d6088b2acdb)
 
-
+>>     Create the Substrate Geometry
+>>               Draw another rectangle for the substrate (5mm x 5mm) and position (-1, -1, 0) it such that the die is at the center.
+                 Set the thickness as -0.5mm -> the substrate lie beneath the die
+                 
+                 Adjust the substrate position along Z-axis to account for the die attach thickness -> (-1, -1, -0.1)
 
 ![WhatsApp Image 2025-07-10 at 4 42 37 PM (10)](https://github.com/user-attachments/assets/4a530a1d-a521-4197-9b7f-86715fe98e6f)
 
@@ -505,20 +549,41 @@ Summary
 
 ![WhatsApp Image 2025-07-10 at 4 42 37 PM (5)](https://github.com/user-attachments/assets/de936e1b-fa13-494f-b45f-d195b22aac18)
 
+>> Adding Die Attach Material and Bond Pads
+>>
+>>      Create the Die Attach Material: Draw a rectangle of the same size as that of the die (3mm x 3mm) and at the same co-ordinates (0, 0, 0).
+             Set the thickness to -0.1mm as the die attach lies beneath the die and the substrate
+         Assign the material to Modified Eopxy
+
+
 
 ![WhatsApp Image 2025-07-10 at 4 42 37 PM (4)](https://github.com/user-attachments/assets/e54b552d-3739-4c61-b686-4e152e03d629)
 
 
 ![WhatsApp Image 2025-07-10 at 4 42 37 PM (3)](https://github.com/user-attachments/assets/cc5e5c61-d133-40f2-b7e9-eb75f17aaa7b)
 
+>>      Create Bond pads on Die and Substrate
+          Draw a small rectangle and configure its size to to that of the die pad (0.2mm x 0.2mm) -> place the first Die Pad at the co-ordinates (0.2, 0.2, 0.2) so that it sits on top of the die and is at one of the edges. Set the thickness to  0.005mm
 
+     Draw a small rectangle and configure its size to to that of the substrate bond pad (0.2mm x 0.2mm). Place this Substrate Bond Pad at the co-ordinates (0.2, -0.7, -0.1) so that it sits aligned to the Die bond pad created in the previous step, and also on top of the substrate. Set the substrate bond pad thickness to 10 microns (0.010mm)
+
+  >>      Wire Bond Creation and Material Assignment
+          To Create Bond Wires-> Use the Bondwire tool under: Draw -> Bondwire
+            Connect the centre of the Die Bond pad to the centre of the Substrate Bond Pad
+             
+             Select the Bondwire type as JEDEC 4-point-> Assign gold as the Bondwire material
+             repeat this  to create and connect all the die and substrate bond pads using bondwires
+
+  >>      Applying Mold Compound and Finalizing the Package Model
+>  >      Build the mold compound around the die-> Create a rectangular enclosure around the die and wires (5mm x 5mm, 1.2mm thickness)
+                                                   Position at (-1, -1, -0.1) covering the top side of the substrate.
+                                                   Set the thickness to 1.2mm so that it covers the die and the bondwires, while also leaving margin for any laser marking processes
 
 ![WhatsApp Image 2025-07-10 at 4 42 37 PM (2)](https://github.com/user-attachments/assets/480fd0b2-16c0-4f9b-b18a-a205e8022692)
 
-
 ![WhatsApp Image 2025-07-10 at 4 42 37 PM (1)](https://github.com/user-attachments/assets/3207e9f5-d0d3-4bae-afb8-b23f9dcd51f6)
 
-Thermal simulation- IcePak tool
+>> Do the Thermal simulation as in Lab 1 using IcePak tool
 
 
 
