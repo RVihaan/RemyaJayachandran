@@ -583,7 +583,17 @@ Summary
 
 ![WhatsApp Image 2025-07-10 at 4 42 37 PM (2)](https://github.com/user-attachments/assets/480fd0b2-16c0-4f9b-b18a-a205e8022692)
 
-![WhatsApp Image 2025-07-10 at 4 42 37 PM (1)](https://github.com/user-attachments/assets/3207e9f5-d0d3-4bae-afb8-b23f9dcd51f6)
+![WhatsApp Image 2025<img width="1920" height="1080" alt="p1" src="https://github.com/user-attachments/assets/05758841-684f-4895-8205-a47e1c647fe8" />
+
+<img width="1920" height="1080" alt="p1" src="https://github.com/user-attachments/assets/998b7cb5-69dd-42fe-883d-160bbff8037f" />
+
+<img width="1920" height="1080" alt="p2" src="https://github.com/user-attachments/assets/bc199462-bd7d-4fb6-b0ec-b14b8770d189" />
+
+<img width="1920" height="1080" alt="p3" src="https://github.com/user-attachments/assets/11e29b19-b58c-4c5c-af0c-14bc1c98fec9" />
+
+
+
+
 
 >> Do the Thermal simulation as in Lab 1 using IcePak tool
 
