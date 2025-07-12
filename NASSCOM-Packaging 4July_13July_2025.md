@@ -597,5 +597,7 @@ Summary
 
 >> Do the Thermal simulation as in Lab 1 using IcePak tool
 
+>> Reference: https://www.vlsisystemdesign.com/packaging/
+              https://github.com/arunkpv/Semiconductor-Packaging
 
 
