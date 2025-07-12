@@ -303,17 +303,117 @@ Package selected: FlipChip package
 <img width="1034" height="564" alt="f4" src="https://github.com/user-attachments/assets/fe620e60-aef8-4101-b632-0dd5681a2df8" />
 
 
+<img width="1024" height="567" alt="f5" src="https://github.com/user-attachments/assets/db174d05-f102-4d2d-b412-9c369ea248c5" />
 
- Image 2025-07-09 at 12 10 54 PM](https://github.com/user-attachments/assets/e442719a-1b96-45a1-b29a-8bfb4661afcc)
+
+<img width="1015" height="554" alt="f6" src="https://github.com/user-attachments/assets/2b2ff4ec-8d82-4eb5-b505-398ad3b2648d" />
+
+
+>>      Package generated in Icepak
+
+
+<img width="1824" height="950" alt="f8" src="https://github.com/user-attachments/assets/85fc8959-0b96-4473-8a09-7ac48ff36bbb" />
+
+
+>>      3D Package Model Structure in Icepak
+>> 
+<img width="1850" height="911" alt="f9" src="https://github.com/user-attachments/assets/7aa3b2d3-1be9-444a-8f73-1a603308ab69" />
+
+
+<img width="1551" height="691" alt="f10" src="https://github.com/user-attachments/assets/77c0fa98-2a8b-45cd-b2e4-937725a05a31" />
+
+
+
+<img width="1720" height="979" alt="f11" src="https://github.com/user-attachments/assets/1de3fc13-b8d0-414e-965d-146e4565c105" />
+
+
+>>      Material Definitions And Thermal Power Sources
+>>               Review and modify the material and definition types for the different components of the model.
+>>               Add/ Assign Source Thermal Model for Die
+                          >>     "Project Manager" sub-window, expand Thermal section and open the BGA1_die_source and configure the thermal condition
+>>               Add/ Assign Source Thermal Model for Substrate
+>>                               Models -> Flipchip_BGA1_Group -> Solids and assign a Thermal Source
+>>              Set the thermal condition on the substrate to Fixed Temperatue and the temperature as Ambient.
+>>                    Add Thermal monitors for the different components- right click on the Flipchip_BGA1_substrate under Models -> Flipchip_BGA1_Group -> Solids and then choose Assign Monitor -> Point
+>>                In the sub-window that appears, select Temperature
+                       Repeat the same to add thermal monitors for the die and the die-underfill
+
+                       
+
+<img width="1648" height="908" alt="f12" src="https://github.com/user-attachments/assets/e3642e22-b885-428d-a8ae-8b743c285978" />
+
+<img width="1874" height="778" alt="f2" src="https://github.com/user-attachments/assets/1da39119-9ed5-43d8-9f99-35d49f6279a2" />
+
+<img width="1920" height="1080" alt="f16" src="https://github.com/user-attachments/assets/fa5511a0-d21c-4610-a276-c9d584880735" />
+
+<img width="1119" height="647" alt="f17" src="https://github.com/user-attachments/assets/e1b290e4-42df-412b-b9ea-789be6adfa21" />
+
+<img width="1920" height="1080" alt="f18" src="https://github.com/user-attachments/assets/d3b6ff6e-a031-44b1-9a58-ae957b7049e9" />
+
+<img width="1251" height="727" alt="f19" src="https://github.com/user-attachments/assets/d3b66a64-6839-4d96-b385-5721f048c8e2" />
+
+
+>> Meshing And Running The Thermal Analysis
+>>
+>>      Generate Mesh
+           Go to the Simulation tab and click on Generate Mesh
+               Save the project  and wait for the mesh generation to get completed.
+                  - ignore/ take steps to debug & fix the issue(s) as required.
+>>      Review Mesh Quality metrics
+>>           Once the mesh is generated, review the quality metrics of the generated mesh such as Face Alignment, Skewness and Volume.
+
+<img width="1920" height="1080" alt="f20" src="https://github.com/user-attachments/assets/302a12c6-093d-49c5-9736-6152c6f81be6" />
+
+<img width="1920" height="1080" alt="f21" src="https://github.com/user-attachments/assets/e807104d-482a-4d6e-835a-0458ad3859da" />
+
+<img width="601" height="865" alt="f22" src="https://github.com/user-attachments/assets/829f7d89-8ddf-4f88-a297-84f63c9f822e" />
+
+<img width="589" height="820" alt="f23" src="https://github.com/user-attachments/assets/7df401d4-21c0-4e88-ac68-dd5326a4e89a" />
+
+<img width="603" height="814" alt="f24" src="https://github.com/user-attachments/assets/6bcdafa4-9e60-4b0a-bbc1-addd15ef284d" />
+
+
+>> Add Thermal Analysis
+           >>  Under Project Manager, right click on Analysis and then,
+           >> select Add Analysis Setup and configure the solver settings as required.
+
+
+<img width="1920" height="1080" alt="f25" src="https://github.com/user-attachments/assets/a47531a7-14c4-438f-8050-4978e8a97c41" />
+
+<img width="1319" height="746" alt="f26" src="https://github.com/user-attachments/assets/e9a4aebb-421f-4a40-a72a-077a271acdce" />
+
+>> Analysing Results And Exploring Other Package Types
+>> 
+    >>                 Run the simulation and plot the temperature map
+                            Click on Analyze All button in the top ribbon
+                            Wait for the simulation to get completed successfully. 
+                           
+            Once the simulation is completed, select the complete FC-BGA package in the 3D view by drawing a selection rectangle using the left-mouse button.
+            Right click and then select Plot Fields -> Temperature -> Temperature
+              Configure the different plot options:
+                                                       Specify Name, Folder
+                                                       Plot on Surface only
+                                                       Surface Smoothing -> Enable Gaussian Smoothing
+
+<img width="1920" height="1080" alt="f29" src="https://github.com/user-attachments/assets/36d87a58-100d-4703-85ae-ba5048b6a471" />
+<img width="1920" height="1080" alt="f28" src="https://github.com/user-attachments/assets/fe3dfe55-05dd-4733-88a2-0b7b9c7b7ccd" />
+<img width="1920" height="1080" alt="f27" src="https://github.com/user-attachments/assets/257218a9-7f68-48be-ab43-737a4d233b2a" />
+<img width="1723" height="838" alt="f36" src="https://github.com/user-attachments/assets/0266b841-57cc-4997-b531-24abc853c8cd" />
+<img width="1566" height="787" alt="f35" src="https://github.com/user-attachments/assets/7c963b12-be56-49a7-9ac1-dbfc9190efbc" />
+<img width="1797" height="619" alt="f34" src="https://github.com/user-attachments/assets/9e765eb1-a6e7-4da1-83a6-11c70d9e0e14" />
+<img width="772" height="565" alt="f33" src="https://github.com/user-attachments/assets/7dbe84df-eae2-409b-a8bb-092e0c961d03" />
+<img width="742" height="539" alt="f32" src="https://github.com/user-attachments/assets/e2360783-d364-4176-9ffa-5470f700556c" />
+<img width="1920" height="1080" alt="f31" src="https://github.com/user-attachments/assets/706ddeaf-09a4-49b0-a85d-a4dc9d33974e" />
+<img width="1876" height="981" alt="f30" src="https://github.com/user-attachments/assets/98f49896-435a-416e-9745-13725b7ec920" />
+
+
+
 
 ![WhatsApp Image 2025-07-10 at 9 58 50 AM](https://github.com/user-attachments/assets/36535ab1-d3a8-4244-a456-2bafc9d16c9a)
 
 ![WhatsApp Image 2025-07-10 at 9 58 51 AM](https://github.com/user-attachments/assets/4d97956a-4037-424b-85b3-9952c1bf1712)
 
-
-
-
-Package: QFN Package
+>> Package: QFN Package
 
 ![WhatsApp Image 2025-07-10 at 10 19 27 AM](https://github.com/user-attachments/assets/78d7e576-09d9-4c45-8743-10c87d693ec0)
 
