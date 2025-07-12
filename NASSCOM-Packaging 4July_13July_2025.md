@@ -287,9 +287,24 @@ Package selected: FlipChip package
       Step 1 : Open AEDT and launch Icepak
 
       
+<img width="1845" height="971" alt="f1" src="https://github.com/user-attachments/assets/c9bc3a43-1706-4eca-96d0-ede5f0a7935a" />
 
 
-![WhatsApp Image 2025-07-09 at 12 10 54 PM](https://github.com/user-attachments/assets/e442719a-1b96-45a1-b29a-8bfb4661afcc)
+>>      Select Flipchip BGA Package: Icepak -> Toolkit -> Geometry -> Packages -> Flipchip_BGA
+<img width="821" height="601" alt="image" src="https://github.com/user-attachments/assets/7ab561a8-57c7-49d8-8f87-bf017783561d" />
+
+
+>>       Package Configuration window opens up -Configure the dimensions and other aspects of the package, substrate, die, die underfill and the solder balls based on the datasheet.Once configured, click OK to generate the package model.
+
+
+![WhatsApp<img width="1023" height="526" alt="f3" src="https://github.com/user-attachments/assets/8d39b39b-1219-44e8-8c72-d26c6d6352ae" />
+
+
+<img width="1034" height="564" alt="f4" src="https://github.com/user-attachments/assets/fe620e60-aef8-4101-b632-0dd5681a2df8" />
+
+
+
+ Image 2025-07-09 at 12 10 54 PM](https://github.com/user-attachments/assets/e442719a-1b96-45a1-b29a-8bfb4661afcc)
 
 ![WhatsApp Image 2025-07-10 at 9 58 50 AM](https://github.com/user-attachments/assets/36535ab1-d3a8-4244-a456-2bafc9d16c9a)
 
@@ -348,6 +363,16 @@ Package: QFN Package
 
 
 <img width="1055" height="581" alt="image" src="https://github.com/user-attachments/assets/28a3fc0a-09a1-43e6-8bc1-9747da509ed5" />
+
+Summary 
+
+<img width="849" height="439" alt="image" src="https://github.com/user-attachments/assets/4d943615-9d76-42f0-908d-e872935ab2a6" />
+
+
+<img width="856" height="444" alt="image" src="https://github.com/user-attachments/assets/216d2a06-3b2e-4300-82d6-2cadbef3b0f9" />
+
+<img width="835" height="438" alt="image" src="https://github.com/user-attachments/assets/0ccde6be-5ad3-46eb-a326-d6c8991861c6" />
+
 
 
 
